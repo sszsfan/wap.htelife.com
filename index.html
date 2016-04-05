@@ -11,6 +11,27 @@
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 	<title>华天e生活</title>
 	<link href="styles/common.css" rel="stylesheet" type="text/css">
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<!-- end javascript -->
+	
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script type="text/javascript">
+		$(function() {
+		  $('#slides').slidesjs({
+		    width: 940,
+		    height: 360,
+		    play: {
+		      active: true,
+		      auto: true,
+		      interval: 4000,
+		      swap: true
+		    }
+		  });
+		});
+	</script>
+	<!-- End SlidesJS Required -->
 </head>
 <body>
 	<div class="container bg_grey">
@@ -57,26 +78,5 @@
 	</div>
 	<!-- 底部菜单 结束 -->
 	
-	<!-- start javascript -->
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/jquery.slides.min.js"></script>
-	<!-- end javascript -->
-	
-	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-	<script>
-	$(function() {
-	  $('#slides').slidesjs({
-	    width: 940,
-	    height: 360,
-	    play: {
-	      active: true,
-	      auto: true,
-	      interval: 4000,
-	      swap: true
-	    }
-	  });
-	});
-	</script>
-	<!-- End SlidesJS Required -->
 </body>
 </html>

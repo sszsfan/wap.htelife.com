@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>下单</title>
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+</head>
+<body class="js_modal_open">
+	<div class="container bg_grey">
+		<div class="itembox_text border_line">
+	    	<div class="item_a bg_yellow" onclick="location.href='price.html'">
+		    	<span class="text border_line">奢侈品皮具护理100元起</span>
+		    	<span class="text_value color_blue">价目表</span>
+		    	<span class="icon_pointer"></span>
+	    	</div>
+	    </div>
+		<div class="item_title_box mt10">预约成功后请等待收送员上门取件</div>
+		<div class="gobox_02">
+			<div class="goitem address border_line" onclick="location.href='address.html'">
+				<div class="text">
+					<p class="f_large">18678788787 张三</p>
+					<p class="mt5">北京市朝阳区天辰东路9号</p>
+				</div>
+				<div class="icon icon_address"></div>
+				<div class="pointer"></div>
+			</div>
+			
+			<div class="goitem border_line" onclick="location.href='address.html'" style="display:block;">
+				<div class="text">
+					<p class="nothing">请添加/选择地址</p>
+				</div>
+				<div class="icon icon_address"></div>
+				<div class="pointer"></div>
+			</div>
+			<div class="goitem store border_line" onclick="location.href='store.html'">
+				<div class="text">
+					<p class="f_large">国家体育馆店</p>
+					<p class="mt5">北京市朝阳区天辰东路9号</p>
+				</div>
+				<div class="icon icon_store"></div>
+				<div class="pointer"></div>
+				<div class="bg_isstore istop"></div>
+				<div class="bg_isstore isbottom"></div>
+			</div>
+			<div class="goitem border_line js_button_001">
+				<div class="text">
+					<p class="nothing">请选择取件时间</p>
+				</div>
+				<div class="icon icon_time"></div>
+				<div class="pointer"></div>
+			</div>
+			<div class="goitem border_line">
+				<div class="text">
+					<p class="time_have">12月16日 今天 18:00-20:00</p>
+				</div>
+				<div class="icon icon_time"></div>
+				<div class="pointer"></div>
+			</div>
+			<div class="goitem border_line">
+				<div class="text">
+					<textarea class="textarea" placeholder="备注留言（选填）"></textarea>
+				</div>
+				<div class="icon icon_ps"></div>
+			</div>
+		</div>
+		<div class="buttonbar p10">
+			<div class="hb"><button class="btn btn_screen btn_blue js_button_ok">确认下单</button></div>
+		</div>
+		<div class="item_title_box center">订单金额不满10元收取10元运费</div>
+	</div>
+	
+	<!-- //提示弹出层 开始 -->
+	<div class="modal modal_ok js_modal_ok">
+	  <div class="modal_dialog_tips">
+	    <div class="modal_content">
+	    	<div class="mc_body">
+	    		<div class="show_tips">
+					<div class="imgbox"><img src="images/ok.png"></div>
+					<div class="text">下单成功</div>
+				</div>
+    		</div>
+	    </div>
+	  </div>
+	  <div class="modal_cover"></div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+	<!-- //弹出层 开始 -->
+	<div class="modal js_modal_001">
+	  <div class="modal_dialog_tips">
+	    <div class="modal_content">
+	    	<div class="mc_head">
+	    		选择取件时间
+	    		<div class="close"><a href="javascript:void(0);" class="js_drop_001">关闭</a></div>
+	    	</div>
+	    	<div class="mc_body">
+	    		<div class="modal_tabnavbox">
+					<div class="tabnav two">
+						<div class="tabnav_item active"><span class="t first">今天</span></div>
+						<div class="tabnav_item"><span class="t last">明天</span></div>
+					</div>
+				</div>
+				<div class="tabcontent">
+					<ul>
+						<li class="disable"><span>8:00-10:00</span></li>
+						<li class="disable"><span>10:00-12:00</span></li>
+						<li><span>12:00-14:00</span></li>
+						<li><span>14:00-16:00</span></li>
+						<li><span>16:00-18:00</span></li>
+						<li class="active"><span>18:00-20:00</span></li>
+						<li><span>20:00-22:00</span></li>
+						<li><span>22:00-24:00</span></li>
+					</ul>
+				</div>
+	    	</div>
+	    	<div class="mc_foot">
+	    		<div class="buttonbar">
+					<button class="btn btn_screen btn_blue js_drop_001">确认</button>
+				</div>
+	    	</div>
+	    </div>
+	  </div>
+	  <div class="modal_cover"></div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- end javascript -->
+</body>
+</html>

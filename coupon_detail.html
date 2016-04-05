@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>优惠券</title>
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+</head>
+<body class="js_modal_open">
+	<div class="container">
+		<div class="coupon_detail_box">
+			<div class="name">优惠券</div>
+			<div class="sharebutton"><button class="btn_share js_button_001">分享</button></div>
+			<div class="coupon_inner">
+				<div class="money">20.00 <i>元</i></div>
+				<div class="info">满20元可用</div>
+				<div class="time">2015-11-01至2015-12-30有效</div>
+			</div>
+			<div class="coupon_hua"></div>
+		</div>
+		<!-- //coupon_detail_box -->
+		<div class="coupon_button_box border_line">
+			<button class="btn btn_screen btn_blue" onclick="location.href='index.html'">立即使用</button>
+			<div class="linka"><a href="coupon.html">查看我的优惠券</a></div>
+		</div>
+	    <div class="itembox_text border_line mt10">
+	    	<div class="item_a" onclick="location.href='coupon_detail_qrcode.html'">
+		    	<span class="text border_line">二维码</span>
+		    	<span class="text_value color_grey">查看二维码</span>
+		    	<span class="icon_pointer"></span>
+	    	</div>
+	    </div>
+	    <div class="item_title_box">使用说明</div>
+	    <div class="itembox_text_content border_line">
+	    	可在线支付订单，也可到店出示改优惠券二维码核销。
+	    </div>
+	</div>
+	
+	<!-- //弹出层 开始 -->
+	<div class="modal modal_share js_modal_001">
+	  <div class="modal_dialog_tips">
+	    <div class="modal_content">
+	    	<div class="btn_close js_drop_001"></div>
+	    	<div class="point"></div>
+	    	<div class="share_content">
+	    		<p>请点击右上角</p>
+	    		<p class="big">【发送给朋友】</p>
+	    		<p class="big">【分享到朋友圈】</p>
+	    		<p>分享给朋友</p>
+	    	</div>
+	    </div>
+	  </div>
+	  <div class="modal_cover"></div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- end javascript -->
+</body>
+</html>

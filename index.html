@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>小熊到</title>
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container bg_grey">
+		<div class="topbar">
+			<a class="city" href="city.html"><span class="text">北京</span><span class="icon"></span></a>
+			<a class="linka_how" href="how.html"></a>
+		</div>
+	    <div id="slides">
+	      <a href="javascript:void(0);"><img src="img/slide_001.png"></a>
+	      <a href="javascript:void(0);"><img src="img/slide_002.png"></a>
+	      <a href="javascript:void(0);"><img src="img/slide_003.png"></a>
+	      <a href="javascript:void(0);"><img src="img/slide_004.png"></a>
+	    </div>
+	    <div class="largenav border_line two">
+	    	 <a href="store.html" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon an"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>按件洗</h2>
+		    	 	<h3>9元/件起</h3>
+		    	 </div>
+	    	 </a>
+	    	 <div class="line l_one border_line"></div>
+	    	 <a href="store.html" class="item">
+		    	 <div class="iconbox bag">
+			    	 <div class="icon bag"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>按袋洗</h2>
+		    	 	<h3>99元/袋</h3>
+		    	 </div>
+	    	 </a>
+	    </div>
+	    <div class="midnav border_line three">
+	    	 <a href="javascript:void(0);" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon curtain"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>窗帘家纺</h2>
+		    	 </div>
+	    	 </a>
+	    	 <div class="line l_one border_line"></div>
+	    	 <a href="javascript:void(0);" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon shoes"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>洗鞋</h2>
+		    	 </div>
+	    	 </a>
+	    	 <div class="line l_two border_line"></div>
+	    	 <a href="javascript:void(0);" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon backpack"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>奢侈品皮具</h2>
+		    	 </div>
+	    	 </a>
+	    </div>
+	    <div class="smallnav border_line three">
+	    	 <a href="javascript:void(0);" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon pay"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>充值</h2>
+		    	 </div>
+	    	 </a>
+	    	 <div class="line l_one border_line"></div>
+	    	 <a href="javascript:void(0);" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon aq"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>常见问题</h2>
+		    	 </div>
+	    	 </a>
+	    	 <div class="line l_two border_line"></div>
+	    	 <a href="javascript:void(0);" class="item">
+		    	 <div class="iconbox">
+			    	 <div class="icon feedback"></div>
+		    	 </div>
+		    	 <div class="text">
+		    	 	<h2>意见反馈</h2>
+		    	 </div>
+	    	 </a>
+	    </div>
+	</div>
+	
+	<!-- 底部菜单 开始 -->
+	<div class="navbox border_line">
+		<div class="wx_nav">
+			<a href="index.html" class="nav_home on">下单</a>
+			<a href="order.html" class="nav_order">订单</a>
+			<a href="me.html" class="nav_me">我的</a>
+		</div>
+	</div>
+	<!-- 底部菜单 结束 -->
+	
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<!-- end javascript -->
+	
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script>
+	$(function() {
+	  $('#slides').slidesjs({
+	    width: 900,
+	    height: 364,
+	    play: {
+	      active: true,
+	      auto: true,
+	      interval: 4000,
+	      swap: true
+	    }
+	  });
+	});
+	</script>
+	<!-- End SlidesJS Required -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>输入房号</title>
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container bg_grey">
+		<div class="item_title_box">请输入房号</div>
+    	<div class="gobox">
+			<div class="goitem" onclick="location.href='address.html'">
+				<div class="text">
+					<p class="">湖南省长沙市岳麓区</p>
+					<p class="f_large mt5">湘腾城市广场3栋1单元</p>
+					
+				</div>
+				<div class="icon icon_address"></div>
+			</div>
+			<div class="goitem">
+				<div class="text">
+					<input type="tel" class="inputtext" placeholder="输入房号" autofocus="">
+				</div>
+				<div class="icon icon_address"></div>
+			</div>
+		</div>
+		<div class="buttonbar p10">
+			<div class="hb"><button class="btn btn_screen btn_blue js_button_ok">确认</button></div>
+			<div class="hb mt20"><a href="address_add.html" class="btn btn_screen btn_white">返回</a></div>
+		</div>
+	</div>
+	
+	<!-- 底部菜单 开始 -->
+	<div class="navbox">
+		<div class="wx_nav">
+			<a href="index.html" class="nav_home">下单</a>
+			<a href="order.html" class="nav_order">订单</a>
+			<a href="me.html" class="nav_me">我的</a>
+		</div>
+	</div>
+	<!-- 底部菜单 结束 -->
+	
+	<!-- //提示弹出层 开始 -->
+	<div class="modal modal_ok js_modal_ok">
+	  <div class="modal_dialog_tips">
+	    <div class="modal_content">
+	    	<div class="mc_body">
+	    		<div class="show_tips">
+					<div class="imgbox"><img src="images/ok.png"></div>
+					<div class="text">添加成功</div>
+				</div>
+    		</div>
+	    </div>
+	  </div>
+	  <div class="modal_cover"></div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- end javascript -->
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>订单管理</title>
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+</head>
+<body class="js_modal_open">
+	<div class="container bg_grey">
+		<div class="tabnavbox">
+			<div class="tabnav two">
+				<div class="tabnav_item active"><span class="t first">进行中</span></div>
+				<div class="tabnav_item"><span class="t last">已完成</span></div>
+			</div>
+		</div>
+		<div class="product_list_box">
+			<div class="order-list border_line blue">	
+				<p class="title border_line">2015-06-02 14:30 <span class="state color_blue"> 进行中 </span> </p>
+				<p class="itemli"><i>订单号：</i><span class="color_blue fsize16">W1231255522545562</span></p>
+				<p class="itemli"><i>订单状态：</i><span class="color_red">已下单，待接单</span></p>
+				<p class="money">金额：<span class="color_grey">计算中</span></p>
+				<p class="buttonbox border_line">
+					<button type="button" class="btn_s btn_grey">取消订单</button>
+					<button type="button" class="btn_s btn_blue" onclick="location.href='order_info.html'">查看详情</button>
+				</p>
+			</div>
+			<div class="order-list border_line blue">	
+				<p class="title border_line">2015-06-02 14:30<span class="state color_blue"> 进行中 </span> </p>
+				<p class="itemli"><i>订单号：</i><span class=" color_blue fsize16">1231255522545562</span></p>
+				<p class="itemli"><i>订单状态：</i><span class="color_red">已入库，洗涤中</span></p>
+				<p class="money">金额：<span class="color_red">￥60.00</span></p>
+				<p class="buttonbox border_line">
+					<button type="button" class="btn_s btn_blue js_button_001">去付款</button>
+					<button type="button" class="btn_s btn_blue" onclick="location.href='order_info.html'">查看详情</button>
+				</p>
+			</div>
+			<div class="order-list border_line green">	
+				<p class="title border_line">2015-06-02 14:30<span class="state color_green"> 已完成 </span> </p>
+				<p class="itemli"><i>订单号：</i><span class=" color_blue fsize16">1231255522545562</span></p>
+				<p class="itemli"><i>订单状态：</i><span class="color_green">已完成</span></p>
+				<p class="money">金额：<span class="color_red">￥60.00</span></p>
+				<p class="buttonbox border_line">
+					<button type="button" class="btn_s btn_blue" onclick="location.href='order_info.html'">查看详情</button>
+				</p>
+			</div>
+			<div class="order-list border_line green">	
+				<p class="title border_line">2015-06-02 14:30<span class="state color_green"> 已完成 </span> </p>
+				<p class="itemli"><i>订单号：</i><span class=" color_blue fsize16">1231255522545562</span></p>
+				<p class="itemli"><i>订单状态：</i><span class="color_green">已完成</span></p>
+				<p class="money">金额：<span class="color_red">￥60.00</span></p>
+				<p class="buttonbox border_line">
+					<button type="button" class="btn_s btn_blue" onclick="location.href='order_info.html'">查看详情</button>
+				</p>
+			</div>
+			<div class="loadingmore">正在加载更多 <img src="images/loading.gif"></div>
+			<div class="data_none">无数据</div>
+			<div class="loadingmore">没有更多数据了</div>
+			<div class="loadingbox"><img src="images/loading.gif"></div>
+		</div>
+	</div>
+	
+	<!-- 底部菜单 开始 -->
+	<div class="navbox border_line">
+		<div class="wx_nav">
+			<a href="index.html" class="nav_home">下单</a>
+			<a href="order.html" class="nav_order on">订单</a>
+			<a href="me.html" class="nav_me">我的</a>
+		</div>
+	</div>
+	<!-- 底部菜单 结束 -->
+	
+	<!-- //弹出层 开始 -->
+	<div class="modal js_modal_001">
+	  <div class="modal_dialog_tips">
+	    <div class="modal_content">
+	    	<div class="mc_head">
+	    		现金收款
+	    		<div class="close"><a href="javascript:void(0);" class="js_drop_001">关闭</a></div>
+	    	</div>
+	    	<div class="mc_body">
+	    		<div class="controlarea">
+		    		<div class="inputtitle">收款金额：（元）</div>
+		    		<div class="inputitem">
+		    			<input type="tel" class="inputtext" value="200" autofocus="">
+		    		</div>
+	    		</div>
+	    		<div class="controlarea">
+		    		<div class="button_item">
+		    			<button class="btn btn_screen btn_green">扫码</button>
+		    		</div>
+	    		</div>
+	    	</div>
+	    	<div class="mc_foot">
+	    		<div class="buttonbar">
+					<button class="btn btn_screen btn_blue js_drop_001">确认已收款</button>
+				</div>
+	    	</div>
+	    </div>
+	  </div>
+	  <div class="modal_cover"></div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+	
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- end javascript -->
+</body>

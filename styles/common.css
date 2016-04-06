@@ -635,10 +635,10 @@ a.purchase_btn {margin:10px;}
 .mask_2 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:1; transition: opacity 0.3s 0s, visibility 0s 0s; visibility: visible;}
 .wrapper_1 {position:fixed; bottom:-260px; left:0; right:0; z-index:1002;}
 .wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
-.wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px;}
+.wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px; color:#161616;}
 .close_wrap{position:absolute;top:5px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
-.wrap_content .methods p{height:40px; line-height: 40px; border:1px solid #d9d9d9; border-radius: 5px; margin:15px; color:#fff; font-size: 16px; background-color: #04be02;}
-.wrap_content .methods a:hover p{opacity:0.8;}
+.wrap_content .methods p{height:40px; line-height: 40px; border:1px solid #d9d9d9; border-radius: 5px; margin:15px; font-size: 16px; background-color: #fff; color:#161616;}
+.wrap_content .methods a:hover p{color:green; background-color: #f8f8f8;}
 /* 立即购买purchase_now结束 */
 
 /* 首页 结束 */

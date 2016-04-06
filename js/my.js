@@ -9,7 +9,7 @@ function showWrapper(){
 		//masks[0].style.visibility = "visible";
 		//masks[0].style.opacity = 1;
 		masks[0].setAttribute("class","js_mask mask_2");
-		moveElement("js_wrap",0,20);
+		moveElement("js_wrap",0,3);
 		/*
 		function moveUp(){
 			if(ypos < 0){
@@ -26,7 +26,7 @@ function showWrapper(){
 		//masks[0].style.visibility = "hidden";
 		//masks[0].style.opacity = 0;
 		masks[0].setAttribute("class","js_mask mask_1");
-		moveElement("js_wrap",-260,20);
+		moveElement("js_wrap",-260,3);
 		/*
 		function moveDown(){
 			if(ypos>-240){
@@ -41,7 +41,7 @@ function showWrapper(){
 	};
 	masks[0].onclick = function(){
 		masks[0].setAttribute("class","js_mask mask_1");
-		moveElement("js_wrap",-260,20);
+		moveElement("js_wrap",-260,3);
 	};
 }
 /*
@@ -87,10 +87,10 @@ function moveElement(elementID,final_y,interval) {
     return true;
   }
   if (ypos < final_y) {
-    ypos = ypos + 10;
+    ypos = ypos + 5;
   }
   if (ypos > final_y) {
-    ypos = ypos - 10;
+    ypos = ypos - 5;
   }
   elem.style.bottom = ypos + "px";
   var repeat = "moveElement('"+elementID+"',"+final_y+","+interval+")";

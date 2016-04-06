@@ -491,8 +491,8 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .smallnav.three .line.l_two {left: 66.666%;}
 
 /*1px边框线 开始*/
-.grids{position:relative; overflow:hidden; margin:10px auto; background-color: #fff;}
-.grids .grid{position:relative; float:left; padding:15px 10px; width:33.3333%; box-sizing: border-box; height:90px;}
+.nav_grid .grids{position:relative; overflow:hidden; margin:10px auto; background-color: #fff;}
+.nav_grid .grids .grid{position:relative; float:left; padding:15px 10px; width:33.3333%; box-sizing: border-box; height:90px;}
 .grids .iconbox span{display:block; width:30px; height:30px; background:url("../images/icon_main.png") no-repeat scroll; background-size: 200px 800px; margin:0 auto;}
 .grids .iconbox span.icon1{background-position: 0 0;}
 .grids .iconbox span.icon2{background-position: -30px 0;}
@@ -502,8 +502,7 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .grids .iconbox span.icon6{background-position: -150px 0;}
 .grids .iconbox span.icon7{background-position: 0 -30px;}
 .grids .iconbox span.icon8{background-position: -30px -30px;}
-.grids .grid p{height:30px; line-height:30px; font-size: 14px; text-align: center;
-color:#151515;}
+.nav_grid .grids .grid p{height:30px; line-height:30px; font-size: 14px; text-align: center; color:#151515;}
 .grids:after, .grids:before{
 	content:"";
 	position:absolute;
@@ -567,6 +566,46 @@ color:#151515;}
 .nav_list .text h2{font-size: 14px; height:20px; line-height: 20px; font-weight: normal; color:#151515;}
 .nav_list .text p{font-size:12px;line-height: 20px; color:#6b6b6b;}
 /* 首页中间导航 结束 */
+
+/* 价目表 开始 */
+.price_table {margin:10px;}
+.price_table .grids{position:relative; overflow:hidden;}
+.price_table .grids .grid{position:relative; box-sizing: border-box; height:30px;}
+.price_table p {color:#6b6b6b;}
+.table_2{width:100%; margin:10px auto; color:#151515;}
+.table_2 td{width:50%; text-align: center; height:35px; line-height:35px; font-weight: normal;}
+.table_2 th{width:100%; text-align: center; height:35px; line-height:35px;  font-weight: normal; background-color:#f0f2f5; }
+/* 价目表 结束 */
+
+/* 会员卡主页 开始 */
+.nav_pic {width:100%; margin:0 auto;}
+.nav_pic img {width:100%;}
+.membership_nav .list:after, .vip_wash .list:after{
+	content:" ";
+	position: absolute;
+	color:#d9d9d9;
+	left:0;
+	bottom:0;
+	height:1px;
+	width:100%;
+	border-bottom:1px solid #d9d9d9;
+	transform-origin: 0 100%;
+	-webkit-transform-origin: 0 100%;
+	transform: scaleY(.5);
+}
+.membership_nav .list {display:block; height:44px; position:relative; text-align: left; padding:10px; background-color: #fff;}
+.membership_nav .list h4{font-size: 18px; font-weight: normal; color:#151515; height:44px; line-height: 44px;}
+.membership_nav .list h4.low_height {height:24px; line-height: 24px;}
+.membership_nav .list p.discount{font-size: 12px; font-weight: normal; color:#6b6b6b;height:20px; line-height: 20px;}
+.membership_nav .list .icon_pointer{width: 22px;height: 18px;content: '\20';position: absolute;top:50%;right:5px;margin-top:-9px;background-image: url("../images/icon_all.png");background-size: 92px 400px;display: block;background-position: -22px 0;}
+/* 会员卡主页 结束 */
+
+/* vip洗涤 开始 */
+.vip_wash .list{width:100%; height:40px; padding:15px 0; position:relative;  background-color: #fff;}
+.vip_wash .list h4{height:20px;line-height: 20px; font-size: 16px; font-weight: normal; padding-left:10px;}
+.vip_wash .list p{height:20px;line-height: 20px; font-size: 16px; font-weight: normal; color:#ff0000; padding-left:10px;}
+.vip_wash .list a{position:absolute; top:50%; right:10px; display:block; height:30px;line-height: 30px; border: 1px solid #ff0000; border-radius: 3px; margin-top:-16px; padding:0 5px; font-size: 14px; color:#ff0000;}
+/* vip洗涤 结束 */
 
 /* 首页 结束 */
 

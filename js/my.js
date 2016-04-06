@@ -44,7 +44,7 @@ function showWrapper(){
 		moveElement("js_wrap",-260,20);
 	};
 }
-
+/*
 function moveElement(elementID,final_y,interval) {
   if (!document.getElementById) return false;
   if (!document.getElementById(elementID)) return false;
@@ -66,6 +66,31 @@ function moveElement(elementID,final_y,interval) {
   if (ypos > final_y) {
     var dist = Math.ceil((ypos - final_y)/10);
     ypos = ypos - dist;
+  }
+  elem.style.bottom = ypos + "px";
+  var repeat = "moveElement('"+elementID+"',"+final_y+","+interval+")";
+  elem.movement = setTimeout(repeat,interval);
+}
+*/
+function moveElement(elementID,final_y,interval) {
+  if (!document.getElementById) return false;
+  if (!document.getElementById(elementID)) return false;
+  var elem = document.getElementById(elementID);
+  if (elem.movement) {
+    clearTimeout(elem.movement);
+  }
+  if (!elem.style.bottom) {
+    elem.style.bottom = "-260px";
+  }
+  var ypos = parseInt(elem.style.bottom);
+  if (ypos == final_y) {
+    return true;
+  }
+  if (ypos < final_y) {
+    ypos = ypos + 10;
+  }
+  if (ypos > final_y) {
+    ypos = ypos - 10;
   }
   elem.style.bottom = ypos + "px";
   var repeat = "moveElement('"+elementID+"',"+final_y+","+interval+")";

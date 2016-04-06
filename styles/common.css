@@ -68,6 +68,24 @@ a:active {text-decoration:none;color:#41a8de;}
 body.bg_white {background: #fff;}
 .line_through {text-decoration: line-through;}
 .perent100 {width: 100%;}
+
+/* 通用1px下划线 开始 */
+.bb_line{position:relative;}
+.bb_line:after{
+	content:" ";
+	position: absolute;
+	color:#d9d9d9;
+	left:0;
+	bottom:0;
+	height:1px;
+	width:100%;
+	border-bottom:1px solid #d9d9d9;
+	transform-origin: 0 100%;
+	-webkit-transform-origin: 0 100%;
+	transform: scaleY(.5);
+}
+/* 通用1px下划线 结束 */
+
 /* 通用按钮 开始 */
 .btn{font-size:16px;font-weight:500;height:40px;line-height:40px;display:inline-block;text-align:center;border:0;cursor:pointer;padding:0 20px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-webkit-appearance:none}
 .btn_s{font-size:14px;font-weight:500;height:30px;line-height:30px;display:inline-block;text-align:center;border:0;cursor:pointer;padding:0 15px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-webkit-appearance:none}
@@ -161,7 +179,7 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .close {position: absolute;top:5px;right:10px;height: 40px;height: 40px;}
 .close a {height: 40px;width: 40px;background-size: 92px 400px;background-image: url('../images/icon_all.png');background-position: 0px -121px;background-repeat: no-repeat;text-indent: -99999px;overflow: hidden;display: block;}
 .close a:hover {background-position: -40px -121px;}
-/* 通用关闭 结束 */
+/* 通用关闭 结束 */s
 
 /* 通用表格 开始 */
 .table {width: 100%;margin: 0;padding: 0;}
@@ -606,6 +624,22 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .vip_wash .list p{height:20px;line-height: 20px; font-size: 16px; font-weight: normal; color:#ff0000; padding-left:10px;}
 .vip_wash .list a{position:absolute; top:50%; right:10px; display:block; height:30px;line-height: 30px; border: 1px solid #ff0000; border-radius: 3px; margin-top:-16px; padding:0 5px; font-size: 14px; color:#ff0000;}
 /* vip洗涤 结束 */
+
+/* 立即购买purchase_now开始 */
+a.purchase_btn {margin:10px;}
+.purchase_info p{color:#6b6b6b;}
+.purchase_info p span{color:#161616;}
+
+/*弹出层*/
+.mask_1 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:0; transition: opacity 0.3s 0s, visibility 0s 0.3s; visibility: hidden;}
+.mask_2 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:1; transition: opacity 0.3s 0s, visibility 0s 0s; visibility: visible;}
+.wrapper_1 {position:fixed; bottom:-260px; left:0; right:0; z-index:1002;}
+.wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
+.wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px;}
+.close_wrap{position:absolute;top:5px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
+.wrap_content .methods p{height:40px; line-height: 40px; border:1px solid #d9d9d9; border-radius: 5px; margin:15px; color:#fff; font-size: 16px; background-color: #04be02;}
+.wrap_content .methods a:hover p{opacity:0.8;}
+/* 立即购买purchase_now结束 */
 
 /* 首页 结束 */
 

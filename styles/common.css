@@ -533,15 +533,9 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 /*1px边框线 开始*/
 .nav_grid .grids{position:relative; overflow:hidden; margin:10px auto; background-color: #fff;}
 .nav_grid .grids .grid{position:relative; float:left; padding:15px 10px; width:33.3333%; box-sizing: border-box; height:90px;}
-.grids .iconbox span{display:block; width:30px; height:30px; background:url("../images/icon_main.png") no-repeat scroll; background-size: 200px 800px; margin:0 auto;}
-.grids .iconbox span.icon1{background-position: 0 0;}
-.grids .iconbox span.icon2{background-position: -30px 0;}
-.grids .iconbox span.icon3{background-position: -60px 0;}
-.grids .iconbox span.icon4{background-position: -90px 0;}
-.grids .iconbox span.icon5{background-position: -120px 0;}
-.grids .iconbox span.icon6{background-position: -150px 0;}
-.grids .iconbox span.icon7{background-position: 0 -30px;}
-.grids .iconbox span.icon8{background-position: -30px -30px;}
+.grids .iconbox span{display:block; width:30px; height:30px; margin:0 auto;}
+.grids .iconbox .icon img {width: 30px;height: 30px;}
+
 .nav_grid .grids .grid p{height:30px; line-height:30px; font-size: 14px; text-align: center; color:#151515;}
 .grids:after, .grids:before{
 	content:"";

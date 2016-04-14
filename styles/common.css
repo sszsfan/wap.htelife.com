@@ -37,7 +37,7 @@ a:active {text-decoration:none;color:#41a8de;}
 /* mozilla firefox */
 ::-moz-selection { background: #74c543;color: #fff; }
 
-.wc_view {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;overflow:cursor: default;hidden;position: absolute;margin: 0px;border: solid 0 transparent;-webkit-touch-callout: none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.wc_view {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;overflow:hidden;cursor: default;position: absolute;margin: 0px;border: solid 0 transparent;-webkit-touch-callout: none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 .selectno {-moz-user-select: -moz-none;-khtml-user-select: none;-ms-user-select: none;-webkit-user-select: none;user-select: none;}
 
 /* common style */
@@ -91,6 +91,7 @@ body.bg_white {background: #fff;}
 .btn_s{font-size:14px;font-weight:500;height:30px;line-height:30px;display:inline-block;text-align:center;border:0;cursor:pointer;padding:0 15px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-webkit-appearance:none}
 .btn.btn_screen {width: 100%;padding: 0;}
 .btn_blue,a.btn_blue{background:#68b6ff;color:#fff}
+
 .btn_blue:hover,.btn_blue:active,a.btn_blue:hover,a.btn_blue:active{background:#3c92fa;color:#fff}
 .btn_orange,a.btn_orange{background:#eb563e;color:#fff}
 .btn_orange:hover,.btn_orange:active,a.btn_orange:hover,a.btn_orange:active{background:#d8503a;color:#fff}
@@ -346,6 +347,7 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .itembox_text .item_a.bg_yellow {background: #ffffe5;}
 .itembox_text .item_a:hover {background: #f8f8f8;}
 .itembox_text .item_a .text_value {height: 26px;min-width:26px;line-height: 26px;text-align: right;display: inline-block;position: absolute;top:50%;right:50px;margin-top:-13px;text-align: center;border-radius: 13px;}
+.itembox_text .item_a .text_value2 {right:10px;}
 .itembox_text .item_a .text_value.color_red {color:#ff0000;}
 .itembox_text .item_a .text_value.total {font-size: 16px;background:#ff683a;color:#fff;font-weight: 600;}
 .itembox_text .item_a .icon_pointer {width: 22px;height: 18px;content: '\20';position: absolute;top:50%;right:10px;margin-top:-9px;background-image: url("../images/icon_all.png");background-size: 92px 400px;display: block;background-position: -22px 0;}
@@ -601,6 +603,8 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .nav_list .text p{font-size:12px;line-height: 20px; color:#6b6b6b;}
 /* 首页中间导航 结束 */
 
+/* 首页 结束 */
+
 /* 价目表 开始 */
 .price_table {margin:10px;}
 .price_table .grids{position:relative; overflow:hidden;}
@@ -608,7 +612,7 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .price_table p {color:#6b6b6b;}
 .table_2{width:100%; margin:10px auto; color:#151515;}
 .table_2 td{width:50%; text-align: center; height:35px; line-height:35px; font-weight: normal;}
-.table_2 th{width:100%; text-align: center; height:35px; line-height:35px;  font-weight: normal; background-color:#f0f2f5; }
+.table_2 th{text-align: center; height:35px; line-height:35px;  font-weight: normal; background-color:#f0f2f5; }
 /* 价目表 结束 */
 
 /* 会员卡主页 开始 */
@@ -642,22 +646,77 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 /* vip洗涤 结束 */
 
 /* 立即购买purchase_now开始 */
-a.purchase_btn {margin:10px;}
 .purchase_info p{color:#6b6b6b;}
 .purchase_info p span{color:#161616;}
-
+button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 /*弹出层*/
 .mask_1 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:0; transition: opacity 0.3s 0s, visibility 0s 0.3s; visibility: hidden;}
 .mask_2 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:1; transition: opacity 0.3s 0s, visibility 0s 0s; visibility: visible;}
-.wrapper_1 {position:fixed; bottom:-260px; left:0; right:0; z-index:1002;}
+.wrapper_1 {position:fixed; bottom:-300px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
+.wrapper_2 {position:fixed; bottom:0px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
 .wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px; color:#161616;}
 .close_wrap{position:absolute;top:5px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
-.wrap_content .methods p{height:40px; line-height: 40px; border:1px solid #d9d9d9; border-radius: 5px; margin:15px; font-size: 16px; background-color: #fff; color:#161616;}
-.wrap_content .methods a:hover p{color:green; background-color: #f8f8f8;}
+.wrap_content .methods {padding-bottom:1px;}
+.wrap_content .methods p{height:36px; line-height: 36px; border:1px solid #d9d9d9; border-radius: 3px; margin:10px; font-size: 16px; background-color: #fff; color:#161616;}
+.wrap_content .methods p.p1{color:#68b6ff; border-color: #68b6ff;}
+.wrap_content .methods p.p2{border:none;}
+.wrap_content .methods a.color_blue p{color:#68b6ff; border-color: #68b6ff;}
+.wrap_content .methods a:hover p{background-color: #f8f8f8;}
 /* 立即购买purchase_now结束 */
 
-/* 首页 结束 */
+/* 家政页面 开始 */
+.main_pic img{width:100%;}
+.bgcolor_white{background-color: #fff; margin-bottom:10px; padding:1px 0;}
+.submit_success {margin:60px auto; text-align: center;}
+.submit_success h4{font-size: 22px;line-height: 40px;}
+.submit_success h5{font-size: 15px; line-height: 40px;}
+.submit_success p{font-size: 12px; line-height: 20px;}
+.submit_success span{display:block; width:150px; height:150px; background:url(../img/order_success.png) no-repeat scroll 0 0; background-size: 150px 150px; margin:20px auto;}
+
+/*我的订单页面*/
+.top_nav{height:50px;position:fixed;z-index:9;width:100%;background-color:#fff;margin:0 auto;top:0;left:0}
+.top_nav .order_flex{height:50px;max-width:640px;margin:0 auto;display:box;display:-ms-box;display:-webkit-box;display:flex;display:-ms-flexbox;display:-webkit-flex}
+.top_nav .order_flex span{height:50px;padding-top:0;color:#666;font-size:14px;line-height:50px;text-align:center;display:block;flex:1;-ms-flex:1;-webkit-flex:1;box-flex:1;-ms-box-flex:1;-webkit-box-flex:1}
+/*订单详情页面*/
+.order_detail{margin:0 auto; background-color: #fff; line-height:25px; padding:0 10px;}
+.order_detail .order_content p.title{color:#000;}
+.order_detail .order_content p{position: relative;}
+.order_detail .order_price .s_time{margin-left:30px; color:#000;}
+.order_detail .order_price .s_price{position:absolute; right:10px; color:#000;}
+.bottom_line{position: relative;}
+.bottom_line:after{
+	content:" ";
+	position: absolute;
+	color:#d9d9d9;
+	left:0;
+	bottom:0;
+	height:1px;
+	width:100%;
+	border-bottom:1px solid #d9d9d9;
+	transform-origin: 0 100%;
+	-webkit-transform-origin: 0 100%;
+	transform: scaleY(.5);
+}
+.confirm_pay{background-color:#fff; margin: 10px auto; padding:10px 0;}
+.confirm_pay p{padding-left: 10px;}
+/*家庭保洁页面*/
+.home_clean {padding:10px;}
+.home_clean p.title{background-color: #f0f2f5}
+.table_3{width:100%; margin:10px auto; color:#151515;}
+.table_3 td{width:100%; text-align: left;  line-height:25px; font-weight: normal; padding:0 10px;}
+.table_3 th{text-align: center; height:35px; line-height:35px;  font-weight: normal; background-color:#f0f2f5; }
+/*选择服务时间段*/
+.time_data {position:relative; overflow: hidden;}
+.time_data li{position:relative; float:left; width:25%; text-align: center; padding:10px 0;}
+.time_data li p{height:20px;}
+.bgclor_blue {background-color: #68b6ff; color:#fff;}
+.time_hours {position:relative; margin:10px; overflow: hidden;}
+.time_hours li{position:relative; float:left; width:25%; text-align: center; padding:10px 0; font-size: 14px; line-height: 40px; height:40px;}
+.time_hours li.full{line-height: 20px; background-color: #ebeef3;}
+.time_hours li.choose{box-shadow:0 0 1px 1px #68b6ff inset;}
+ 
+/* 家政页面 结束 */
 
 /* 我的 开始 */
 .userbox {background: #30465e;padding:10px;}
@@ -916,6 +975,7 @@ body.bg_redgrey {background: #5e4438;}
 
 .gobox_02 {padding: 0px;}
 .gobox_02 .goitem {background: #fff;margin-bottom: 10px;padding:10px 30px 10px 40px;position: relative;border-width: 2px 0px 2px 0px;}
+.gobox_02 div.goitem_2 {padding:10px 30px 10px 10px;}
 .gobox_02 .goitem.bg_blue {background: #ddeefb}
 .gobox_02 .goitem.address {padding:15px 30px 15px 40px;}
 .gobox_02 .goitem.store {padding:15px 30px 15px 40px;}
@@ -1155,6 +1215,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 @media screen and (max-width: 360px){
 	.nav_list {height:100px;}
+	.time_hours li{font-size: 12px; }
 }
 
 

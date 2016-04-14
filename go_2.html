@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>下单</title>
+	<link href="styles/weui.min.css" rel="stylesheet" type="text/css">	
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+	<script src="js/my.js"></script>
+</head>
+<body class="js_modal_open">
+	<div class="container bg_grey">
+		<div class="itembox_text border_line">
+	    	<div class="item_a" onclick="location.href=''">
+		    	<span class="text border_line">家庭保洁</span>
+		    	<span class="text_value text_value2 color_blue"><a href="price_bak2.html">价目表</a></span>
+	    	</div>
+	    </div>
+		<div class="item_title_box mt10">当天下单需提前4小时</div>
+		<div class="gobox_02">
+			<div class="goitem border_line" onclick="location.href=''" style="display:block;">
+				<div class="text">
+					<p class="nothing">请选择服务地点</p>
+				</div>
+				<div class="icon icon_address"></div>
+				<div class="pointer"></div>
+			</div>
+			<div class="goitem border_line" onclick="location.href='choose_time.html'">
+				<div class="text">
+					<p class="nothing">请选择服务时间</p>
+				</div>
+				<div class="icon icon_time"></div>
+				<div class="pointer"></div>
+			</div>
+		</div>
+		<div class="p10">
+			<button class="btn btn_screen btn_blue js_control_btn001">立即下单</button>
+		</div>
+	</div>
+
+	<!-- //弹出层 开始 -->
+	<div class="js_mask mask_1"></div>
+	<div class="js_wrapper wrapper_1">
+		<div class="wrap_content">
+			<div class="pay_methods bb_line">
+				<p>请选择付款方式</p>
+				<span class="close_wrap js_close_wrap"></span>
+			</div>
+			<div class="methods">
+				<a class="color_blue" href=""><p>立即付款</p></a>
+				<a class="color_blue" href="order_submit.html"><p>服务后付款</p></a>
+			</div>
+		</div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+</body>
+</html>

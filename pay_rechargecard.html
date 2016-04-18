@@ -9,7 +9,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-dns-prefetch-control" content="on">
-	<title>充值</title>
+	<title>充值卡</title>
 	<link href="styles/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,41 +17,33 @@
 		
 		<div class="tabnavbox">
 			<div class="tabnav two">
-				<div class="tabnav_item active"><span class="t first">在线充</span></div>
-				<div class="tabnav_item" onclick="location.href='pay_rechargecard.html'"><span class="t last">充值卡</span></div>
+				<div class="tabnav_item" onclick="location.href='pay.html'"><span class="t first">在线充</span></div>
+				<div class="tabnav_item active" onclick="location.href='pay_rechargecard.html'"><span class="t last">充值卡</span></div>
 			</div>
 		</div>
 		
 		<div class="have_tabnavbox">
 		
-		    <div class="item_title_box">充值享折扣优惠</div>
-		    <div class="itembox_text border_line it_m">
-		    	<div class="item_a active">
-			    	<span class="text border_line">1000元</span>
-			    	<span class="text_value color_red">享6折优惠</span>
-			    	<span class="icon_checked"></span>
-		    	</div>
-		    	<div class="item_a">
-			    	<span class="text border_line">500元</span>
-			    	<span class="text_value color_red">享6.5折优惠</span>
-			    	<span class=""></span>
-		    	</div>
-		    	<div class="item_a">
-			    	<span class="text border_line">300元</span>
-			    	<span class="text_value color_red">享7折优惠</span>
-			    	<span class=""></span>
-		    	</div>
+		    <div class="membershow">
+			    <div class="member">
+				    充值账号：<i>13689899898</i>
+			    </div>
 		    </div>
 		    
-	    	<div class="item_title_box">其他金额（元）</div>
-	    	<div class="itembox_text border_line it_m">
+	    	<div class="item_title_box">请输入充值卡上的兑换码</div>
+	    	<div class="itembox_text border_line it_m onlyinput">
 		    	<div class="item_a nohover active">
-			    	<span class="text border_line"><input type="tel" class="inputtext" placeholder="请输入金额"></span>
-			    	<span class="icon_checked"></span>
+			    	<span class="text border_line"><input type="tel" class="inputtext" placeholder="请输入兑换码" autofocus=""></span>
+			    	
+		    	</div>
+		    	<div class="item_a nohover active have_captcha">
+			    	<span class="text border_line"><input type="tel" class="inputtext" placeholder="请输入验证码" autofocus=""></span>
+			    	<div class="captcha"><img src="images/captcha.jpg" /></div>
 		    	</div>
 		    </div>
+		    <div class="bd"><div class="color_red">兑换码错误</div></div>
 		    <div class="buttonbar p10">
-				<div class="hb"><button class="btn btn_screen btn_green js_button_ok">微信支付</button></div>
+				<div class="hb"><button class="btn btn_screen btn_green" onclick="location.href='success.html'">确定</button></div>
 			</div>
 		</div>
 		<!-- //have_tabnavbox -->
@@ -74,7 +66,7 @@
 	    	<div class="mc_body">
 	    		<div class="show_tips">
 					<div class="imgbox"><img src="images/ok.png"></div>
-					<div class="text">支付成功</div>
+					<div class="text">充值成功</div>
 				</div>
     		</div>
 	    </div>

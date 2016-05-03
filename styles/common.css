@@ -782,7 +782,7 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 /*弹出层*/
 .mask_1 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:0; transition: opacity 0.3s 0s, visibility 0s 0.3s; visibility: hidden;}
 .mask_2 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:1; transition: opacity 0.3s 0s, visibility 0s 0s; visibility: visible;}
-.wrapper_1 {position:fixed; bottom:-300px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
+.wrapper_1 {position:fixed; bottom:-350px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrapper_2 {position:fixed; bottom:0px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
 .wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px; color:#161616;}
@@ -828,10 +828,7 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 	-webkit-transform-origin: 0 100%;
 	transform: scaleY(.5);
 }
-/*
 .right_line{position: relative;}
-.top_line{position: relative;}
-.left_line{position: relative;}
 .right_line:after{
 	content:" ";
 	position: absolute;
@@ -845,6 +842,7 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 	-webkit-transform-origin: 100% 100%;
 	transform: scaleX(.5);	
 }
+.top_line{position: relative;}
 .top_line:before{
 	content:" ";
 	position: absolute;
@@ -858,7 +856,8 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 	-webkit-transform-origin: 0 -100%;
 	transform: scaleY(.5);		
 }
-.left_line:after{
+.left_line{position: relative;}
+.left_line:before{
 	content:" ";
 	position: absolute;
 	color:#d9d9d9;
@@ -871,7 +870,7 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 	-webkit-transform-origin: 0 0;
 	transform: scaleX(.5);	
 }
-*/
+
 .confirm_pay{background-color:#fff; margin: 10px auto; padding:10px 0;}
 .confirm_pay p{padding-left: 10px;}
 /*家庭保洁页面*/
@@ -1297,8 +1296,41 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .pane_container .contentbody .detail_info .buttonbar .button_item {float: left;margin-right:10px;}
 /*订单详情 end */
 
+/* 厨师页面 开始 */
+.choose_cook_package{padding:10px 0; position:relative; height:20px; color:#000;}
+.choose_cook_package .package_icon1{position:absolute; display:block; width:20px; height:20px; left:10px; top:10px; background: url(../images/cook_icon.png) no-repeat scroll -100px 0; background-size: 160px 40px;}
+.choose_cook_package .package_icon2{position:absolute; display:block; width:20px; height:20px; right:10px; top:10px; background: url(../images/cook_icon.png) no-repeat scroll -40px 0; background-size: 160px 40px;}
+.choose_cook_package p{display:block; width:160px; margin:0 auto; text-align: center; line-height: 20px;}
+.cook_material{position:relative; margin:10px 0; overflow: hidden; text-align: center; height:20px; color:#000;}
+.cook_material .material_item{float: left; width:50%; text-align: center; position:relative;}
+.cook_material .material_item p{margin-left:20px;}
+.cook_material .material_item .material_icon1{position: absolute; left:50%; margin-left:-50px; width:20px; height:20px; background: url(../images/cook_icon.png) no-repeat scroll -140px 0; background-size: 160px 40px;}
+.cook_material .material_item .material_icon2{position: absolute; left:50%; margin-left:-50px; width:20px; height:20px; background: url(../images/cook_icon.png) no-repeat scroll 0 -20px; background-size: 160px 40px;}
+.cook_material.right_line:after{right:50%;}
+.cook_material p{line-height: 20px;}
+.cook_requirement{margin-bottom:5px;}
+.cook_requirement input{margin:0; padding:0; width:100%; border:none; height:30px; line-height: 30px;}
+.choose_requirement{overflow: hidden;}
+.choose_requirement li{float:left; width:33.3%; text-align:center; height:40px; margin:5px auto;}
+.choose_requirement li p{padding:0 10px; line-height:24px; border-radius: 10px; border:1px solid #d9d9d9; display: inline-block; margin:7px auto;}
+.choose_requirement li p.color_blue{border-color:#68b6ff;}
+.goitem2{padding:10px; background: #fff;margin-bottom: 10px; position: relative;border-width: 2px 0px 2px 0px;}
+
+.cook_choose_date{overflow: hidden; margin:10px 0 0 0;}
+.cook_choose_date li{float:left; width:20%; padding-bottom:10px;}
+.cook_choose_date li.choose{color:#68b6ff; border-bottom: 1px solid #68b6ff;}
+.cook_choose_time{overflow: hidden; position:relative;}
+.cook_choose_time li{float: left; width:25%; position: relative; height:35px; line-height: 35px;}
+.cook_choose_time li.choose{box-shadow:0 0 1px 1px #68b6ff inset; position:relative;}
+.btn_confirm {background-color: #fff; padding:10px 10px 5px 10px;}
 
 
+.cook_item{margin:10px;}
+.cook_item img{width:100%;}
+.cook_item .text{position:relative; padding:10px; background-color: #fff;}
+.cook_item .text h4{font-weight:normal; font-size: 16px; line-height: 30px;}
+.cook_item .text a{position: absolute; right:10px; top:50%; margin-top: -17px; height:35px; line-height: 35px;}
+/* 厨师页面 结束 */
 
 /* 弹出层 开始 */
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>下单</title>
+	<link href="styles/weui.min.css" rel="stylesheet" type="text/css">	
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+	<script src="js/my.js"></script>
+</head>
+<body class="js_modal_open">
+	<div class="container bg_grey">
+		<div class="item_title_box mt10">为保证您准时用餐（建议在用餐前4小时预订）</div>
+		<div class="gobox_02">
+			<div class="goitem border_line" onclick="location.href=''" >
+				<div class="text">
+					<p class="nothing">请填写地址</p>
+				</div>
+				<div class="icon icon_address"></div>
+				<div class="pointer"></div>
+			</div>
+
+			<div class="goitem border_line" onclick="location.href=''">
+				<div class="text">
+					<p class="nothing">请选择用餐时间</p>
+				</div>
+				<div class="icon icon_time"></div>
+				<div class="pointer"></div>
+			</div>
+
+			<div class="goitem">
+				<div class="choose_cook_package bottom_line">
+					<i class="package_icon1"></i>
+					<p class="left_line right_line">四菜/99元</p>
+					<i class="package_icon2"></i>
+				</div>
+				<div class="cook_material right_line">
+					<div class="material_item">
+						<i class="material_icon1"></i>
+						<p>自备食材</p>
+					</div>
+					<div class="material_item">
+						<i class="material_icon2"></i>
+						<p class="color_blue">代买食材</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="goitem2">
+				<div class="cook_requirement bottom_line">
+					<input type="text" placeholder="可手动输入..." />
+				</div>
+				<ul class="choose_requirement">
+					<li><p class="color_blue">不吃辣</p></li>
+					<li><p>口味清淡</p></li>
+					<li><p>有小孩</p></li>
+					<li><p>有忌口</p></li>
+					<li><p>有孕妇</p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="navbox_btn border_line">
+		<div class="wx_nav_btn">
+			<a href="javascript:void(0);" id="js_control_btn001">立即预订</a>
+		</div>
+	</div>
+	<!-- //弹出层 开始 -->
+	<div class="js_mask mask_1"></div>
+	<div class="js_wrapper wrapper_1">
+		<div class="wrap_content">
+			<div class="pay_methods bb_line">
+				<p>选择用餐时间</p>
+				<span class="close_wrap js_close_wrap"></span>
+			</div>
+			<ul class="cook_choose_date">
+				<li class="choose">
+					<p>周四</p>
+					<p>04-14</p>
+				</li>
+				<li>
+					<p>周五</p>
+					<p>04-15</p>
+				</li>
+				<li>
+					<p>周六</p>
+					<p>04-16</p>
+				</li>
+				<li>
+					<p>周日</p>
+					<p>04-17</p>
+				</li>
+				<li>
+					<p>周一</p>
+					<p>04-18</p>
+				</li>
+			</ul>
+			<ul class="cook_choose_time grids">
+				<li class="grid">
+					<p>10:00</p>
+				</li>
+				<li class="grid">
+					<p>11:00</p>
+				</li>
+				<li class="grid">
+					<p>11:30</p>
+				</li>
+				<li class="grid">
+					<p>12:00</p>
+				</li>
+				<li class="grid">
+					<p>12:30</p>
+				</li>
+				<li class="grid">
+					<p>13:00</p>
+				</li>
+				<li class="grid">
+					<p>14:00</p>
+				</li>
+				<li class="grid">
+					<p>15:00</p>
+				</li>
+				<li class="grid">
+					<p>16:00</p>
+				</li>
+				<li class="grid choose">
+					<p>17:00</p>
+					<span class="choose_confirm"></span>
+				</li>
+				<li class="grid">
+					<p>17:30</p>
+				</li>
+				<li class="grid">
+					<p>18:00</p>
+				</li>
+				<li class="grid">
+					<p>18:30</p>
+				</li>
+				<li class="grid">
+					<p>19:00</p>
+				</li>
+				<li class="grid">
+					<p>19:30</p>
+				</li>
+				<li class="grid">
+					<p>20:00</p>
+				</li>
+			</ul>
+
+			
+    		<div class="btn_confirm">
+				<button class="btn btn_screen btn_blue " id="js_close_wrap2">确认</button>
+			</div>
+	    	
+		</div>
+	</div>
+	<!-- //弹出层 结束 -->
+	
+</body>
+</html>

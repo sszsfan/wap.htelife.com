@@ -26,4 +26,8 @@ jQuery(document).ready(function($){
 			$('.js_modal_open').removeClass('modal_open');
 		}
 	});
+	//农行支付
+	$('.abc_btn').on('click', function(){
+		$(".abc_btn").attr("src","images/abc_btn002.jpg");
+	});
 });

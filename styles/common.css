@@ -786,7 +786,7 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 .wrapper_2 {position:fixed; bottom:0px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
 .wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px; color:#161616;}
-.close_wrap{position:absolute;top:5px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
+.close_wrap{position:absolute;top:10px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
 .wrap_content .methods {padding-bottom:1px;}
 .wrap_content .methods p{height:36px; line-height: 36px; border:1px solid #d9d9d9; border-radius: 3px; margin:10px; font-size: 16px; background-color: #fff; color:#161616;}
 .wrap_content .methods p.p1{color:#68b6ff; border-color: #68b6ff;}
@@ -1330,8 +1330,79 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .cook_item .text{position:relative; padding:10px; background-color: #fff;}
 .cook_item .text h4{font-weight:normal; font-size: 16px; line-height: 30px;}
 .cook_item .text a{position: absolute; right:10px; top:50%; margin-top: -17px; height:35px; line-height: 35px;}
+
+
+/*选择厨师页面*/
+.cooker_list{overflow: hidden;padding:10px;}
+.cooker_list .avatar{float:left;width:60px; height:60px;}
+.cooker_list .avatar img{width:100%;}
+.cooker_list .cooker_info{margin-left:70px; position: relative;}
+.cooker_list .cooker_info h4{font-weight: normal; font-size: 14px; height:20px; line-height: 20px;}
+.cooker_list .cooker_info p{font-size: 12px; height:20px; line-height: 20px;}
+.cooker_list .cooker_info .customer_counts{margin-left: 100px;}
+
+.star{position:absolute; left:0; top:20px; overflow: hidden;}
+.star li{float:left; height:20px; line-height: 20px;}
+
+/*立即预订页面*/
+.cook_order_now {text-align: center; line-height: 20px;}
+.cook_order_now h4{font-weight: normal; color:#000;}
+.cook_order_now p{font-size: 12px;}
+.cook_order_now img{width:100%; margin-bottom: 10px;}
+.cook_item .text2{padding:10px 0; overflow: hidden;}
+.cook_item .text2 h4{float:left; height:40px; line-height: 40px; font-size: 20px; }
+.cook_item .text2 a{float:right; }
+
+/*菜单页面*/
+.cook_menu {position:relative; padding:10px;}
+.cook_menu .cook_pic{position: absolute; width:60px;height:60px;}
+.cook_menu .cook_pic img{width:100%;}
+.cook_menu .cooker_info{padding:10px 0; margin-left: 75px;}
+.cook_menu .cooker_info h4{font-size: 14px; font-weight: normal; color:#000; line-height: 20px; height:20px; }
+.cook_menu .cooker_info p{font-size: 12px; line-height: 20px; height:20px;}
+.cook_menu i{position: absolute; right:10px; top:25px; width:30px; height:30px; background:url(../images/cook_icon.png) no-repeat scroll -30px 0; background-size: 240px 60px; }
+.cook_menu i.choose{background-position: 0 0;}
+.cook_menu_nav{overflow: hidden;}
+.cook_menu_nav h4{float: left; height:40px; line-height: 40px; margin:5px auto; font-size: 18px; font-weight: normal;}
+.cook_menu_nav a{float: right; height:40px; line-height: 40px; margin:5px auto; position: relative; padding-left:47px;}
+.cook_menu_nav a span{position:absolute; left:17px; top:8px; display: block; width:22px; height:22px; border-radius: 50%; border:1px solid #fff; line-height: 22px; font-size: 14px;}
+/*预约厨师*/
+.predetermine_cooker {background-color:#fff; margin-bottom:10px; padding:10px; line-height: 25px;}
+.predetermine_cooker span{color:#000;}
+.predetermine_cooker .item{overflow: hidden;}
+.predetermine_cooker .item .title{float:left;}
+.predetermine_cooker .item .content{margin-left: 70px; color:#000;}
+.contact_info{position:relative; background-color: #fff; margin-bottom: 10px; padding:10px; line-height: 20px;}
+.contact_info .icon_pointer {width: 22px;height: 18px;content: '\20';position: absolute;top:50%;right:10px;margin-top:-9px;background-image: url("../images/icon_all.png");background-size: 92px 400px;display: block;background-position: -22px 0;}
 /* 厨师页面 结束 */
 
+/* 农行支付 开始 */
+.abc_pic{width:100%;}
+.abc_pic img{width:100%;}
+.abc_pic .abc_btn{width:180px; margin:0px auto; display: block; margin-top:20px;}
+.abc_pay a.btn{margin:10px auto; display: block; width:80px; }
+.abc_pay .title{margin:10px 10px 0 10px; position:relative; height:40px;}
+.abc_pay .title p{position:absolute; left:50%; margin-left: -60px; width:80px; height:40px; line-height: 40px; font-size: 20px; padding:0 20px; z-index:2; background-color: #fff; color:#000;}
+.abc_pay .title i{width:100%; height:1px; border-bottom:1px solid #000; position:absolute; left:0; top:20px; z-index:1;}
+.abc_pay .content{margin:0 20px 10px 20px;  color:#000;}
+.abc_pay .content p{line-height: 24px; font-size: 14px;}
+.pay_btn {margin:10px;}
+.pay_btn button{background-color: #23d3c4; color:#fff; margin:10px auto;}
+
+.add_bankcard p.head{height:40px; line-height: 40px; font-size: 14px; padding-left: 10px;}
+.bankcard{background-color: #fff; padding-left: 10px; }
+.card_info{position: relative; overflow: hidden;}
+.card_info input{margin:0 0 0 100px; border: none; padding:0; height:40px; line-height: 40px; display:block; width:60%;}
+.card_info p{position: absolute; left:0; height:40px; line-height: 40px;}
+.pay_btn2 {margin:10px;}
+.pay_btn2 button{background-color: #3bb2c2; color:#fff; margin:10px auto;}
+
+.abc_pay_success{margin:60px 0 10px 0;}
+.abc_pay_success img{width:120px; height:120px; display: block; margin:20px auto;}
+.abc_pay_success p{font-size: 20px; height:40px; line-height: 40px; text-align: center;}
+.abc_pay_success .pay_money{position:relative; font-size: 16px; height:20px; line-height: 20px; text-align: left;}
+.abc_pay_success .pay_money .money{position:absolute; right:0; }
+/* 农行支付 结束 */
 /* 弹出层 开始 */
 
 /* 弹出层 》框架 开始 */

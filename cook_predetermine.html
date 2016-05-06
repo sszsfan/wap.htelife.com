@@ -10,13 +10,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 	<title>下单</title>
-	<link href="styles/weui.min.css" rel="stylesheet" type="text/css">	
+	
 	<link href="styles/common.css" rel="stylesheet" type="text/css">
-	<script src="js/my.js"></script>
+	
 </head>
-<body class="js_modal_open">
+<body>
 	<div class="container bg_grey">
-		
 		<div class="gobox_02">
 			<div class="predetermine_cooker">	
 				<p>预约厨师：<span>张逸</span></p>
@@ -62,9 +61,26 @@
 
 	<div class="navbox_btn border_line">
 		<div class="wx_nav_btn">
-			<a href="javascript:void(0);" id="js_control_btn001">立即预订</a>
+			<a href="javascript:void(0);" class="jq_btn_002">立即预订</a>
 		</div>
 	</div>
 
+	<!-- //弹出层 开始 -->
+	<div class="jq_mask_002 mask_1"></div>
+	<div class="jq_wrapper_002 wrapper_1">
+		<div class="wrap_content">
+			<div class="pay_methods bb_line">
+				<p>请选择付款方式</p>
+				<span class="close_wrap jq_close_002"></span>
+			</div>
+			<div class="methods">
+				<a class="color_blue" href=""><p>立即付款</p></a>
+				<a class="color_blue" href="order_submit.html"><p>服务后付款</p></a>
+			</div>
+		</div>
+	</div> 
+	<!-- //弹出层 结束 -->	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>下单</title>
+	<link href="styles/weui.min.css" rel="stylesheet" type="text/css">	
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	  	$('#slides').slidesjs({
+	    	width: 940,
+	    	height: 360,
+	   		play: {
+	    	active: true,
+	    	auto: true,
+	    	interval: 4000,
+	    	swap: true
+	    }
+		});
+	});
+	</script>
+	<!-- End SlidesJS Required -->	
+
+</head>
+<body class="bg_white">
+	<div class="container cooker_detail">
+		<div class="cooker_nav bottom_line">
+			<p>厨师详情</p>
+		</div>
+		<div id="slides">
+	      <a href="javascript:void(0);"><img src="img/cook_slide001.jpg"></a>		
+	      <a href="javascript:void(0);"><img src="img/slide_001.jpg"></a>
+	      <a href="javascript:void(0);"><img src="img/slide_002.jpg"></a>
+	      <a href="javascript:void(0);"><img src="img/slide_003.jpg"></a>
+	    </div>
+	    <p id="index_content"></p>
+		<div class="cooker_list bottom_line">
+			<div class="avatar">
+				<img src="./img/avatar001.png" />	
+			</div>
+			<div class="cooker_info">
+				<h4>张逸</h4>
+				<!--
+				<p>身份证：522121****6984&nbsp;&nbsp;<span class="yan">验</span></p>
+				-->
+				<p>服务：258家</p>
+				<p>擅长：川菜、家常菜、粤菜、本帮菜、粤菜、本帮菜</p>
+			</div>
+			<div class="store">收藏</div>
+		</div>
+		<div class="cooker_comment bottom_line">
+	    	<p>用户评分</p>
+	    	<span class="icon_pointer"></span>
+	    	<ul class="star2">
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+			</ul>
+			<span class="comments">(23人评价)</span>
+    	</div>
+		<div class="cook_comments">
+			<div class="comment_item bottom_line">
+				<p>131****2311</p>
+				<p class="comment">非常好，师傅动作很快，味道又美，重点推荐油爆虾和娃娃汤。</p>
+				<span>04-12</span>
+				<ul class="star">
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cook_comments">
+			<div class="comment_item bottom_line">
+				<p>131****2311</p>
+				<p class="comment">非常好，师傅动作很快，味道又美，重点推荐油爆虾和娃娃汤。</p>
+				<span>04-12</span>
+				<ul class="star">
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cook_comments">
+			<div class="comment_item bottom_line">
+				<p>131****2311</p>
+				<p class="comment">非常好，师傅动作很快，味道又美，重点推荐油爆虾和娃娃汤。</p>
+				<span>04-12</span>
+				<ul class="star">
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>
+					<li>★</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="navbox_btn border_line">
+		<div class="wx_nav_btn">
+			<a href="javascript:void(0);" class="jq_btn_001" >选菜预订</a>
+		</div>
+	</div>
+
+	<!-- //弹出层 开始 -->
+	<div class="mask_1 jq_mask_001"></div>
+	<div class="wrapper_1 jq_wrapper_001">
+		<div class="wrap_content">
+			<div class="pay_methods bb_line">
+				<p>选择套餐</p>
+				<span class="close_wrap jq_close_001"></span>
+			</div>
+
+			<div class="choose_package bb_line">
+				<p>四菜/99元</p>
+				<div class="choose left_line right_line">
+					<div class="choose_num bottom_line top_line">
+						4
+					</div>
+					<i class="icon1 right_line"></i>
+					<i class="icon2 left_line"></i>
+				</div>
+			</div>
+			
+			<ul class="cook_choose_date">
+				<li class="choose">
+					<p>周四</p>
+					<p>04-14</p>
+				</li>
+				<li>
+					<p>周五</p>
+					<p>04-15</p>
+				</li>
+				<li>
+					<p>周六</p>
+					<p>04-16</p>
+				</li>
+				<li>
+					<p>周日</p>
+					<p>04-17</p>
+				</li>
+				<li>
+					<p>周一</p>
+					<p>04-18</p>
+				</li>
+			</ul>
+			<ul class="cook_choose_time grids">
+				<li class="grid">
+					<p>10:00</p>
+				</li>
+				<li class="grid">
+					<p>11:00</p>
+				</li>
+				<li class="grid">
+					<p>11:30</p>
+				</li>
+				<li class="grid">
+					<p>12:00</p>
+				</li>
+				<li class="grid">
+					<p>12:30</p>
+				</li>
+				<li class="grid">
+					<p>13:00</p>
+				</li>
+				<li class="grid">
+					<p>14:00</p>
+				</li>
+				<li class="grid">
+					<p>15:00</p>
+				</li>
+				<li class="grid">
+					<p>16:00</p>
+				</li>
+				<li class="grid choose">
+					<p>17:00</p>
+					<span class="choose_confirm"></span>
+				</li>
+				<li class="grid">
+					<p>17:30</p>
+				</li>
+				<li class="grid">
+					<p>18:00</p>
+				</li>
+				<li class="grid">
+					<p>18:30</p>
+				</li>
+				<li class="grid">
+					<p>19:00</p>
+				</li>
+				<li class="grid">
+					<p>19:30</p>
+				</li>
+				<li class="grid">
+					<p>20:00</p>
+				</li>
+			</ul>
+
+			
+    		<div class="btn_confirm">
+				<button class="btn btn_screen btn_blue" onclick="location.href='cook_menu.html'" >选菜预订</button>
+			</div>
+	    	
+		</div>
+	</div>
+	<!-- //弹出层 结束 -->
+
+	
+
+</body>
+</html>

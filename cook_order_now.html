@@ -11,11 +11,29 @@
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 	<title>华天e生活</title>
 	<link href="styles/common.css" rel="stylesheet" type="text/css">
-
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	  	$('#slides').slidesjs({
+	    	width: 940,
+	    	height: 360,
+	   		play: {
+	    	active: true,
+	    	auto: true,
+	    	interval: 4000,
+	    	swap: true
+	    }
+		});
+	});
+	</script>
+	<!-- End SlidesJS Required -->	
 
 </head>
 <body class="bg_white">
-	<div class="cook_order_now">
+	<div class="container cook_order_now">
 		<img src="./img/cook_personnel001.jpg" />
 		<h4>寒起养生汤（四菜一汤）</h4>
 		<p>酱汁生蚝</p>
@@ -26,13 +44,19 @@
 		<h4>菜品展示</h4>
 
  		<div class="cook_item">
-			<img src="./img/cook_order_now001.jpg" />
-			<div class="text2">
-				<h4><span class="color_red">￥1288</span></h4>
-				<a href="" class="btn btn_blue">立即预订</a>
-			</div>
+			<div id="slides">
+		      <a href="javascript:void(0);"><img src="img/cook_slide001.jpg"></a>		
+		      <a href="javascript:void(0);"><img src="img/cook_order_now001.jpg"></a>
+		      <a href="javascript:void(0);"><img src="img/slide_002.jpg"></a>
+		      <a href="javascript:void(0);"><img src="img/cook_order_now001.jpg"></a>
+		    </div>
  		</div>
 	</div>
 
+	<div class="navbox_btn cook_menu_nav border_line">
+		<h4><span class="color_red">四菜/99元</span></h4>
+		<a href="cook_order_now2.html" class="btn btn_order_now btn_blue">立即预定</a>
+
+	</div>	
 </body>
 </html>

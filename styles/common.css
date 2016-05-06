@@ -1424,16 +1424,21 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .abc_pic{width:100%;}
 .abc_pic img{width:100%;}
 .abc_pic .activity_time{width:250px; margin:10px auto; display: block;}
-.abc_pic .abc_btn{width:180px; margin:0px auto; display: block; margin-top:10px;}
+/* .abc_button .button_inner img.abc_btn{width:260px; margin:0px auto; display: block; margin-top:20px;} */
+.abc_button .time_inner {font-size: 14px;text-align: center;color: red;display: block;}
+.abc_button .button_inner {margin: 10px;}
+.abc_button .button_inner img.abc_btn.disable {opacity: 0.4;}
+
+.abc_button {margin: 40px 0;}
 .abc_pay a.btn{margin:10px auto; display: block; width:80px; }
 .abc_pay .title{margin:10px 10px 0 10px; position:relative; height:40px;}
-.abc_pay .title p{position:absolute; left:50%; margin-left: -60px; width:80px; height:40px; line-height: 40px; font-size: 20px; padding:0 20px; z-index:2; background-color: #fff; color:#000;}
-.abc_pay .title i{width:100%; height:0; border-bottom:1px solid #000; position:absolute; left:0; top:20px; z-index:1;}
-.abc_pay .content{margin:0 20px 10px 20px;  color:#000;}
-.abc_pay .content p{line-height: 24px; font-size: 14px;}
+.abc_pay .title p{position:absolute; left:50%; margin-left: -60px; width:80px; height:40px; line-height: 40px; font-size: 16px; padding:0 20px; z-index:2; background-color: #fff; color:#000;text-align: center;}
+.abc_pay .title i{width:100%; height:0; border-bottom:1px solid #ccc; position:absolute; left:0; top:20px; z-index:1;}
+.abc_pay .content{margin:0 10px 10px 10px;  color:#000;}
+.abc_pay .content p{line-height: 30px; font-size: 14px;margin-bottom: 10px;}
 .pay_btn {margin:10px;}
 .pay_btn button{background-color: #23d3c4; color:#fff; margin:10px auto;}
-.ht_logo{margin:10px auto; width:140px;}
+.ht_logo{margin:60px auto; width:140px;}
 .ht_logo img{width:140px; height:40px;}
 
 .add_bankcard p.head{height:40px; line-height: 40px; font-size: 14px; padding-left: 10px;}

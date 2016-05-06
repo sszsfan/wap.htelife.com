@@ -8,7 +8,7 @@ border color: #e8ebf1
 html {display: block;}
 *{-webkit-tap-highlight-color:transparent;outline:0}
 body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline;}
-body {margin:0 auto;width: 100%;height:100%;font-size:14px;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;color:#666;-webkit-text-size-adjust: 100% !important;background: #f0f2f5;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-o-font-smoothing: antialiased;-moz-font-smoothing: antialiased;font-weight: 300;font-size: 14px;line-height:1.2;position: absolute;display: block;}
+body {margin:0 auto;width: 100%;height:100%;font-size:14px;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑", "微软雅黑","STHeiti","Microsoft YaHei",SimHei,sans-serif !important;color:#666;-webkit-text-size-adjust: 100% !important;background: #f0f2f5;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-o-font-smoothing: antialiased;-moz-font-smoothing: antialiased;font-weight: 300;font-size: 14px;line-height:1.2;position: absolute;display: block;}
 img{border:0 none;vertical-align:top;}
 i,em{font-style:normal}
 ol,ul{list-style:none}
@@ -782,11 +782,11 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 /*弹出层*/
 .mask_1 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:0; transition: opacity 0.3s 0s, visibility 0s 0.3s; visibility: hidden;}
 .mask_2 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:1; transition: opacity 0.3s 0s, visibility 0s 0s; visibility: visible;}
-.wrapper_1 {position:fixed; bottom:-350px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
+.wrapper_1 {position:fixed; bottom:-380px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrapper_2 {position:fixed; bottom:0px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
 .wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px; color:#161616;}
-.close_wrap{position:absolute;top:5px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
+.close_wrap{position:absolute;top:10px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
 .wrap_content .methods {padding-bottom:1px;}
 .wrap_content .methods p{height:36px; line-height: 36px; border:1px solid #d9d9d9; border-radius: 3px; margin:10px; font-size: 16px; background-color: #fff; color:#161616;}
 .wrap_content .methods p.p1{color:#68b6ff; border-color: #68b6ff;}
@@ -809,9 +809,14 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 .top_nav .order_flex{height:50px;max-width:640px;margin:0 auto;display:box;display:-ms-box;display:-webkit-box;display:flex;display:-ms-flexbox;display:-webkit-flex}
 .top_nav .order_flex span{height:50px;padding-top:0;color:#666;font-size:14px;line-height:50px;text-align:center;display:block;flex:1;-ms-flex:1;-webkit-flex:1;box-flex:1;-ms-box-flex:1;-webkit-box-flex:1}
 /*订单详情页面*/
-.order_detail{margin:0 auto; background-color: #fff; line-height:25px; padding:0 10px;}
-.order_detail .order_content p.title{color:#000;}
+.order_detail{margin:0 auto; background-color: #fff; line-height:25px; padding:10px;}
+.order_detail2{margin:10px auto;}
+.order_detail .order_content{margin-bottom: 5px;}
+.order_detail .order_content p{color:#6b6b6b;}
+.order_detail .order_content p span{color:#000;}
 .order_detail .order_content p{position: relative;}
+.order_detail .order_price  .title{color:#000;}
+.order_detail .order_price textarea{width:100%; height:60px; border:none; resize: none; color:#6b6b6b; font-size: 14px; line-height: 20px;}
 .order_detail .order_price .s_time{margin-left:30px; color:#000;}
 .order_detail .order_price .s_price{position:absolute; right:10px; color:#000;}
 .bottom_line{position: relative;}
@@ -1245,16 +1250,15 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .modal_tabnavbox .tabnav {padding: 0;margin: 0;}
 
 /* 订单列表 开始 */
-.product_list_box{margin: 0;padding: 0px 0px 50px 0px;position: absolute;top:50px;left: 0px;right: 0px;}
+/*.product_list_box{margin: 0;padding: 0px 0px 50px 0px;position: absolute;top:50px;left: 0px;right: 0px;}*/
+.product_list_box{margin: 0; margin-top:60px; padding: 0px 0px 50px 0px;}
 .product_list_box .order-list{border-width: 2px; margin:15px 10px;padding-left:10px;padding-right:10px;background-color:#ffffff;}
-.product_list_box .order-list.blue {}
-.product_list_box .order-list.green {}
 .product_list_box .order-list .title{line-height:30px;border-width: 0px 0px 2px 0px; margin-bottom:6px;position:relative;font-size: 14px;font-weight: 400;}
 .product_list_box .order-list .title .state{position:absolute;right:0px;font-weight: 300;font-size: 14px;}
 .product_list_box .order-list .title .blue{color:#08a4ff;}
-.product_list_box .order-list .itemli{font-size:14px;line-height:25px;color:#000;}
+.product_list_box .order-list .itemli{font-size:12px;line-height:22px;color:#000;}
 .product_list_box .order-list .itemli i {color:#999;}
-.product_list_box .order-list .money{text-align:right;line-height:30px;font-size: 14px;}
+.product_list_box .order-list .money{text-align:right;line-height:24px;font-size: 14px;}
 .product_list_box .buttonbox{text-align:right;padding: 6px 0;border-width: 2px 0px 0px 0px;}
 /* 订单列表 结束 */
 
@@ -1330,8 +1334,122 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .cook_item .text{position:relative; padding:10px; background-color: #fff;}
 .cook_item .text h4{font-weight:normal; font-size: 16px; line-height: 30px;}
 .cook_item .text a{position: absolute; right:10px; top:50%; margin-top: -17px; height:35px; line-height: 35px;}
+
+
+/*选择厨师页面*/
+.cooker_list{overflow: hidden;padding:10px; position:relative;}
+.cooker_list .avatar{position:absolute; left:10px; top:50%; margin-top:-30px; width:60px; height:60px;}
+.cooker_list .avatar img{width:100%;}
+.cooker_list .cooker_info{margin-left:70px; position: relative;}
+.cooker_list .cooker_info h4{font-weight: normal; font-size: 14px; height:20px; line-height: 20px;}
+.cooker_list .cooker_info p{font-size: 12px; line-height: 20px;}
+.cooker_list .cooker_info .customer_counts{margin-left: 100px;}
+
+.cooker_info .star{position:absolute; left:0; top:50%; margin-top:-10px; overflow: hidden;}
+.star{overflow: hidden;}
+.star li{float:left; font:14px arial; height:20px; line-height: 20px; color:#9fa0a0;}
+.star li.active{color:red;}
+/*更多评论页面*/
+.comment_item {position:relative; padding:10px; line-height: 20px;}
+.comment_item span{position:absolute; right:10px; top:10px; }
+.comment_item .star{position: absolute; left:100px; top:10px;}
+.comment_item .comment{font-size: 12px; color:#6b6b6b;}
+.comment_item .pic {overflow: hidden;}
+.comment_item .pic img{width:60px; height:60px; margin:2px; float: left;}
+/*立即预订页面*/
+.cook_order_now {text-align: center; line-height: 20px;}
+.cook_order_now h4{font-weight: normal; color:#000;}
+.cook_order_now p{font-size: 12px;}
+.cook_order_now img{width:100%; margin-bottom: 10px;}
+.cook_order_now .cook_item{margin:10px 0;}
+
+/*菜单页面*/
+.cook_menu {position:relative; padding:10px;}
+.cook_menu .cook_pic{position: absolute; width:60px;height:60px;}
+.cook_menu .cook_pic img{width:100%;}
+.cook_menu .cooker_info{padding:10px 0; margin-left: 75px;}
+.cook_menu .cooker_info h4{font-size: 14px; font-weight: normal; color:#000; line-height: 20px; height:20px; }
+.cook_menu .cooker_info p{font-size: 12px; line-height: 20px; height:20px;}
+.cook_menu i{position: absolute; right:10px; top:25px; width:30px; height:30px; background:url(../images/cook_icon.png) no-repeat scroll -30px 0; background-size: 240px 60px; }
+.cook_menu i.choose{background-position: 0 0;}
+.cook_menu_nav{overflow: hidden;}
+.cook_menu_nav h4{float: left; height:40px; line-height: 40px; margin:5px auto; font-size: 18px; font-weight: normal;}
+.cook_menu_nav a{float: right; height:40px; line-height: 40px; margin:5px auto; position: relative; padding-left:47px;}
+.cook_menu_nav a.btn_order_now{padding-left:20px;}
+.cook_menu_nav a span{position:absolute; left:17px; top:8px; display: block; width:22px; height:22px; border-radius: 50%; border:1px solid #fff; line-height: 22px; font-size: 14px;}
+/*预约厨师页面*/
+.predetermine_cooker {background-color:#fff; margin-bottom:10px; padding:10px; line-height: 25px;}
+.predetermine_cooker span{color:#000;}
+.predetermine_cooker .item{overflow: hidden;}
+.predetermine_cooker .item .title{float:left;}
+.predetermine_cooker .item .content{margin-left: 70px; color:#000;}
+.contact_info{position:relative; background-color: #fff; margin-bottom: 10px; padding:10px; line-height: 20px;}
+.contact_info.mb0{margin-bottom: 0px;}
+.contact_info .icon_pointer {width: 22px;height: 18px;content: '\20';position: absolute;top:50%;right:10px;margin-top:-9px;background-image: url("../images/icon_all.png");background-size: 92px 400px;display: block;background-position: -22px 0;}
+/*立即支付页面*/
+.cook_pay_now{overflow: hidden;}
+.cook_pay_now h4{float: left; height:40px; line-height: 40px; margin:5px auto; font-size: 14px; font-weight: normal;}
+.cook_pay_now h4 span{font-size: 18px;}
+.cook_pay_now a{float: right; height:40px; line-height: 40px; margin:5px auto; position: relative; }
+.cook_pay_now a span{position:absolute; left:17px; top:8px; display: block; width:22px; height:22px; border-radius: 50%; border:1px solid #fff; line-height: 22px; font-size: 14px;}
+/*立即预定2页面*/
+.cook_minpic {background-color: #fff; margin-bottom: 10px; padding:10px; overflow: hidden;}
+.cook_minpic img{width:96px; height:72px; float: left;}
+.cook_minpic .description{margin-left:116px; }
+.cook_minpic .description h4{height:28px; font-size: 16px; font-weight: 500;line-height: 28px;}
+.cook_minpic .description p{font-size: 14px; height:22px;line-height: 22px;}
+/*厨师详情*/
+.cooker_nav{padding:5px 10px; position: relative; line-height: 30px;}
+.cooker_nav p{height:30px; color:#000; font-size: 16px;}
+.cooker_nav a{position: absolute; right:10px; top:50%; margin-top: -15px;height:30px;}
+/* .cooker_list .cooker_info .yan{background-color: #68b6ff; color:#fff; padding:2px 3px; border-radius: 5px;} */
+.cooker_detail .cooker_list .cooker_info{margin-right:50px;}
+.cooker_detail .cooker_list .store{position: absolute; top:50%; margin-top:-13px; padding:0 5px; right:10px; height:24px; line-height: 24px; border:1px solid #68b6ff; border-radius: 5px; color:#68b6ff;}
+.cooker_comment{position:relative; height:20px; line-height: 20px; padding:10px;}
+.cooker_comment .star{position:absolute; left:80px; top:50%; margin-top: -10px;}
+.cooker_comment .comments{position: absolute; left:180px; top:50%; margin-top: -10px; font-size: 12px; height:20px; line-height: 20px;}
+.cooker_comment .icon_pointer{width: 22px;height: 18px;content: '\20';position: absolute;top:50%;right:5px;margin-top:-9px;background-image: url("../images/icon_all.png");background-size: 92px 400px;display: block;background-position: -22px 0;}
+
+.choose_package {position:relative; text-align: left; padding-left:10px; overflow: hidden; font-size: 16px; color:#000;}
+.choose_package p{float:left; height:60px; line-height: 60px; }
+.choose_package .choose{float:right; height:40px; line-height: 40px; margin:10px; position: relative;}
+.choose_package .choose .choose_num{padding:0 60px; height:40px; line-height: 40px;}
+.choose_package .choose .choose_num span{display:block; padding:0 20px;}
+.choose_package .choose .icon1{position: absolute; left:5px; top: 5px; background:url(../images/2001.png) no-repeat scroll 0 0; width:30px; height:30px; background-size: 30px 30px;padding-right:10px;}
+.choose_package .choose .icon2{position: absolute; right:5px; top: 5px; background:url(../images/1002.png) no-repeat scroll right center; width:30px; height:30px; background-size: 30px 30px; padding-left:10px;}
+
 /* 厨师页面 结束 */
 
+/* 农行支付 开始 */
+.abc_pic{width:100%;}
+.abc_pic img{width:100%;}
+.abc_pic .activity_time{width:250px; margin:10px auto; display: block;}
+.abc_pic .abc_btn{width:180px; margin:0px auto; display: block; margin-top:10px;}
+.abc_pay a.btn{margin:10px auto; display: block; width:80px; }
+.abc_pay .title{margin:10px 10px 0 10px; position:relative; height:40px;}
+.abc_pay .title p{position:absolute; left:50%; margin-left: -60px; width:80px; height:40px; line-height: 40px; font-size: 20px; padding:0 20px; z-index:2; background-color: #fff; color:#000;}
+.abc_pay .title i{width:100%; height:0; border-bottom:1px solid #000; position:absolute; left:0; top:20px; z-index:1;}
+.abc_pay .content{margin:0 20px 10px 20px;  color:#000;}
+.abc_pay .content p{line-height: 24px; font-size: 14px;}
+.pay_btn {margin:10px;}
+.pay_btn button{background-color: #23d3c4; color:#fff; margin:10px auto;}
+.ht_logo{margin:10px auto; width:140px;}
+.ht_logo img{width:140px; height:40px;}
+
+.add_bankcard p.head{height:40px; line-height: 40px; font-size: 14px; padding-left: 10px;}
+.bankcard{background-color: #fff; padding-left: 10px; }
+.card_info{position: relative; overflow: hidden;}
+.card_info input{margin:0 0 0 100px; border: none; padding:0; height:40px; line-height: 40px; display:block; width:60%;}
+.card_info p{position: absolute; left:0; height:40px; line-height: 40px;}
+.pay_btn2 {margin:10px;}
+.pay_btn2 button{background-color: #3bb2c2; color:#fff; margin:10px auto;}
+
+.abc_pay_success{margin:60px 0 10px 0;}
+.abc_pay_success img{width:120px; height:120px; display: block; margin:20px auto;}
+.abc_pay_success p{font-size: 20px; height:40px; line-height: 40px; text-align: center;}
+.abc_pay_success .pay_money{position:relative; font-size: 16px; height:20px; line-height: 20px; text-align: left;}
+.abc_pay_success .pay_money .money{position:absolute; right:0; }
+/* 农行支付 结束 */
 /* 弹出层 开始 */
 
 /* 弹出层 》框架 开始 */

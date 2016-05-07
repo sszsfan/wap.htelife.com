@@ -1413,11 +1413,10 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .choose_package {position:relative; text-align: left; padding-left:10px; overflow: hidden; font-size: 16px; color:#000;}
 .choose_package p{float:left; height:60px; line-height: 60px; }
 .choose_package .choose{float:right; height:40px; line-height: 40px; margin:10px; position: relative;}
-.choose_package .choose .choose_num{padding:0 60px; height:40px; line-height: 40px;}
-.choose_package .choose .choose_num span{display:block; padding:0 20px;}
-.choose_package .choose .icon1{position: absolute; left:5px; top: 5px; background:url(../images/2001.png) no-repeat scroll 0 0; width:30px; height:30px; background-size: 30px 30px;padding-right:10px;}
-.choose_package .choose .icon2{position: absolute; right:5px; top: 5px; background:url(../images/1002.png) no-repeat scroll right center; width:30px; height:30px; background-size: 30px 30px; padding-left:10px;}
-
+.choose_package .choose .choose_num{padding:0 40px; height:40px; line-height: 40px;}
+.choose_package .choose .choose_num .num{padding:0 20px; height:20px; line-height: 20px; margin:10px auto;}
+.choose_package .choose .icon1{position: absolute; left:10px; top: 10px; background:url(../images/cook_icon.png) no-repeat scroll -100px 0; width:20px; height:20px; background-size: 160px 40px;}
+.choose_package .choose .icon2{position: absolute; right:10px; top: 10px; background:url(../images/cook_icon.png) no-repeat scroll -40px 0; width:20px; height:20px; background-size: 160px 40px;}
 /* 厨师页面 结束 */
 
 /* 农行支付 开始 */

@@ -90,7 +90,21 @@ function addLoadEvent(func) {
     }
   }
 }
+
+function inputValue(){
+	var val = document.getElementById("inputval");
+	var reg = /^\d+(\.\d)?$/; 
+	var reg2 = /^\d+$/;	
+	val.onblur = function(){
+		if(!reg.test(val.value)&&!reg2.test(val.value)){
+			val.value = "";
+		}
+	}
+}
 addLoadEvent(showWrapper);
 addLoadEvent(showWrapper2);
+addLoadEvent(inputValue);
+
+
 
 

@@ -54,10 +54,12 @@ a:active {text-decoration:none;color:#41a8de;}
 .color_green {color: #3dc700;}
 .color_grey {color: #ccc;}
 .color_black {color: #000;}
+.color_orange {color: #fb6841;}
 .p10{padding:10px;}
 .bold {font-weight: bold;}
 .fsize20 {font-size: 20px;}
 .fsize16 {font-size: 16px;}
+.fsize12 {font-size: 12px;}
 .datanone,.data_none {text-align: center;font-size: 18px;color:#999;padding: 100px 0;display:block;}
 .loadingbox {text-align: center;padding:100px 0;display: block;}
 .loadingbox img {margin: 0 auto;width:30px;height: 30px;}
@@ -102,6 +104,8 @@ body.bg_white {background: #fff;}
 .btn_red:hover,.btn_red:active,a.btn_red:hover,a.btn_red:active{background:#f66;color:#fff}
 .btn_green,a.btn_green{background:#3dc700;color:#fff}
 .btn_green:hover,.btn_green:active,a.btn_green:hover,a.btn_green:active{background:#56e317;color:#fff}
+.btn_light_green,a.btn_light_green{background-color: #3bb2c2; color:#fff;}
+.btn_light_green:hover ,.btn_light_green:active ,a.btn_light_green:hover ,a.btn_light_green:active{background-color: #6bd2e2; color:#fff;}
 .btn_white,a.btn_white{background:#fff;color:#000;border:1px solid #e8ebf1;}
 .btn_white:hover,.btn_white:active,a.btn_white:hover,a.btn_white:active{background:#f8f8f8;color:#000;border:1px solid #e8ebf1;}
 .btn_white_white,a.btn_white_white{background:rgba(255,255,255,1);color:#336699;}
@@ -784,6 +788,10 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 .mask_2 {position:fixed;top:0;right:0;bottom:0;left:0;background-color: rgba(0, 0, 0, 0.8); z-index:1001; opacity:1; transition: opacity 0.3s 0s, visibility 0s 0s; visibility: visible;}
 .wrapper_1 {position:fixed; bottom:-380px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
 .wrapper_2 {position:fixed; bottom:0px; left:0; right:0; z-index:1002; transition: all 0.3s linear;}
+.wrapper_3 {position:fixed; top:18%; left:6%; right:6%; display:none; opacity: 0; z-index:1002; transition: all 0.3s linear;}
+.wrapper_4 {position:fixed; top:18%; left:6%; right:6%; display:block; opacity: 1; z-index:1002; transition: all 0.3s linear;}
+.wrapper_5 {position:fixed; top:18%; left:0; right:0; display:none; opacity: 0; z-index:1002; transition: all 0.3s linear;}
+.wrapper_6 {position:fixed; top:18%; left:0; right:0; display:block; opacity: 1; z-index:1002; transition: all 0.3s linear;}
 .wrap_content{padding-bottom:5px;background-color: #fff; text-align: center;}
 .wrap_content .pay_methods p{height:40px; line-height: 40px; padding:10px 0; font-size: 16px; color:#161616;}
 .close_wrap{position:absolute;top:10px; left:10px; display:block;width:40px;height:40px; background:url("../images/icon_all.png") no-repeat scroll 0 -121px ;background-size:92px 400px;}
@@ -793,6 +801,7 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 .wrap_content .methods p.p2{border:none;}
 .wrap_content .methods a.color_blue p{color:#68b6ff; border-color: #68b6ff;}
 .wrap_content .methods a:hover p{background-color: #f8f8f8;}
+.methods_btn a{display:block; margin:10px;}
 /* 立即购买purchase_now结束 */
 
 /* 家政页面 开始 */
@@ -1254,7 +1263,11 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 
 /* 订单列表 开始 */
 /*.product_list_box{margin: 0;padding: 0px 0px 50px 0px;position: absolute;top:50px;left: 0px;right: 0px;}*/
-.product_list_box{margin: 0; margin-top:60px; padding: 0px 0px 50px 0px;}
+.product_list_box {margin: 0; margin-top:60px; padding: 0px 0px 50px 0px;}
+.product_list_box .tips{position:relative; margin-top:-10px; background-color:#fffeec;}
+.product_list_box .tips p{line-height: 30px; font-size: 12px; margin:0 20px 0 35px;}
+.product_list_box .tips .icon1{width: 16px;height: 16px ;position: absolute;top:50%; left:10px; margin-top:-8px; background: url("../images/hk_icon.png") no-repeat 0 0; background-size: 64px 48px; display: block; }
+.product_list_box .tips .icon2{width: 15px;height: 13px ;position: absolute;top:50%; right:10px;margin-top:-8px;background-image: url("../images/icon_all.png"); background-size: 63px 289px;display: block;background-position: -15px 0;}
 .product_list_box .order-list{border-width: 2px; margin:15px 10px;padding-left:10px;padding-right:10px;background-color:#ffffff;}
 .product_list_box .order-list .title{line-height:30px;border-width: 0px 0px 2px 0px; margin-bottom:6px;position:relative;font-size: 14px;font-weight: 400;}
 .product_list_box .order-list .title .state{position:absolute;right:0px;font-weight: 300;font-size: 14px;}
@@ -1350,8 +1363,8 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 
 .cooker_info .star{position:absolute; left:0; top:50%; margin-top:-10px; overflow: hidden;}
 .star{overflow: hidden;}
-.star li{float:left; font:14px arial; height:20px; line-height: 20px; color:#9fa0a0;}
-.star li.active{color:red;}
+.star li{float:left; font:14px arial; height:20px; line-height: 20px; color:#c7c7c7;}
+.star li.active{color:#fb6841;}
 /*更多评论页面*/
 .comment_item {position:relative; padding:10px; line-height: 20px;}
 .comment_item span{position:absolute; right:10px; top:10px; }
@@ -1447,7 +1460,7 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .bankcard{background-color: #fff; padding-left: 10px; }
 .card_info{position: relative; overflow: hidden;}
 .card_info input{margin:0 0 0 100px; border: none; padding:0; height:40px; line-height: 40px; display:block; width:60%;}
-.card_info p{position: absolute; left:0; height:40px; line-height: 40px;}
+.card_info p{position: absolute; left:0; line-height: 40px;}
 .pay_btn2 {margin:10px;}
 .pay_btn2 button{background-color: #3bb2c2; color:#fff; margin:10px auto;}
 
@@ -1457,6 +1470,200 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .abc_pay_success .pay_money{position:relative; font-size: 16px; height:20px; line-height: 20px; text-align: left;}
 .abc_pay_success .pay_money .money{position:absolute; right:0; }
 /* 农行支付 结束 */
+
+/* 家政订单详情页面 开始*/
+.hk_order_state {
+	background-color: #3190e8;
+	overflow: hidden;
+}
+.inner_box {
+	margin:6px;
+}
+.hk_order_state .state_box {
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 5px 5px 0 0;
+	padding: 5px 0 20px 0;
+}
+.hk_order_state .state_box .icon_box {
+	width:38px; 
+	height:38px;
+	float:left;
+	border-radius: 50%;
+	background-color: #4cd964;
+	margin:6px 10px;
+}
+.hk_order_state .state_box .icon_box i{
+	display:block;
+	width:20px;
+	height:20px;
+	background: url(../images/hk_icon.png) no-repeat scroll -40px 0; 
+	background-size: 80px 60px;
+	margin:9px;
+}
+.hk_order_state .state_box .icon_box i.icon2{
+	background-position: -60px 0;
+}
+.hk_order_state .state_box .icon_box i.icon3{
+	background-position: -40px -20px;
+}
+.hk_order_state .state_box .state{
+	margin-left: 60px; 
+	line-height: 50px;
+	font-size: 18px; 
+	font-weight: 500;
+}
+.hk_order_state .state_box .icon{
+	float: left; 
+}
+.hk_order_state .progress_box {
+	position:relative;
+	background-color: #f3f3f3;
+	border-radius: 0 0 5px 5px;
+}
+.hk_order_state .progress_box .progress_text {
+	overflow: hidden;
+}
+.hk_order_state .progress_box .progress_text li {
+	font-size: 14px;
+	position: relative;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	height:40px;
+	line-height: 30px;
+	color: #a6a6a6;
+	padding: 8px 0;
+}
+.hk_order_state .progress_text li .dot {
+	position: absolute;
+	z-index: 2;
+	left:50%;
+	margin-left:-12px;
+	top: 31px;
+	width:11px;
+	height:11px;
+	border-radius: 50%;
+	border:4px solid #f3f3f3;
+	background-color: #f3f3f3;
+}
+.hk_order_state .progress_text li .dot i {
+	display:block;
+	width:5px;
+	height:5px;
+	background-color: #b4b4b4;
+	border-radius: 50%;
+	border:2px solid #f3f3f3;
+	margin:1px;
+}
+.hk_order_state .progress_text li.active p {color: #3190e8;}
+.hk_order_state .progress_text li.active .dot {
+	background-color: #3190e8;
+}
+.hk_order_state .progress_text li.active .dot i {
+	background-color: #3190e8;
+}
+.hk_order_state .progress_box .progress_line {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	top: 40px;
+}
+.hk_order_state .progress_box .progress_line .line {
+	display: block;
+	width: 66.6%;
+	margin:0 auto;
+	border-width: 0;
+	border-top-width: 1px;
+	transform: scaleY(.5);
+}
+
+.hk_working {background-color: #fff;}
+.hk_working .state {background-color: #3dc700; height:45px; line-height: 45px; text-align: center; color: #fff; font-size: 16px;}
+.hk_working .progress {width:72%; margin:5px auto; font-size: 12px;}
+.hk_working .progress .item {overflow:hidden; line-height: 30px; color:#a6a6a6;}
+.hk_working .progress .progress_bar {position:relative;}
+.hk_working .progress .progress_bar .dot1 {position:absolute; top:50%; margin-top: -6px; left: 16px; width:9px; height: 9px; border:1px solid #3dc700; border-radius: 50%;}
+.hk_working .progress .progress_bar .dot1 i {display:block; width:5px; height:5px; background-color: #3dc700; border: 2px solid #fff; border-radius: 50%;}
+.hk_working .progress .progress_bar .dot1.small {border-color: #fff;}
+.hk_working .progress .progress_bar .dot1.small i {background-color: #bbb;}
+.hk_working .progress .progress_bar .dot2 {position:absolute; top:50%; margin-top: -6px; right: 16px; width:9px; height: 9px; border:1px solid #3dc700; border-radius: 50%;}
+.hk_working .progress .progress_bar .dot2 i {display:block; width:5px; height:5px; background-color: #3dc700; border: 2px solid #fff; border-radius: 50%;}
+.hk_working .progress .progress_bar .dot2.small {border-color: #fff;}
+.hk_working .progress .progress_bar .dot2.small i {background-color: #bbb;}
+.hk_working .progress .progress_bar .outter_bar {margin: 5px 40px; height:3px; background-color: #ddd; border-radius: 2px; }
+.hk_working .progress .progress_bar .outter_bar.full {background-color: #3dc700;}
+.hk_working .progress .progress_bar .outter_bar .inner_bar {height:3px; background-color: #3dc700; width: 50%; border-radius: 2px;}
+
+.hk_item_head {height:40px; line-height: 40px; font-size: 16px; font-weight: 500; color:#000;}
+.hk_server_info, .hk_client_info, .hk_pay_item, .hk_order_info {background-color: #fff; padding-left:10px; margin-top:10px; }
+.hk_server_info .server_info .info {line-height:26px; position: relative; padding:5px 0 10px 0;}
+.hk_server_info .server_info .comments {position: relative; }
+.hk_server_info .server_info .comments .star {position: absolute; left:40px; top:5px; height:20px; }
+.hk_server_info .server_info .comments .score {margin-left:90px; height:30px; padding:0 5px; background-color: #fb6841; border-radius: 3px; color:#fff; font-size: 12px;}
+.hk_server_info .server_info .comments .times {font-size: 12px;}
+.hk_server_info .server_info .avatar {position:absolute; right:10px; top:50%; margin-top:-40px; width:80px; height:80px;}
+
+.hk_order_info .item {overflow: hidden; color:#000; line-height: 40px;}
+.hk_order_info .item .title {float:left; color:#666;}
+.hk_order_info .item .content {margin-left:80px;}
+
+
+.hk_pay_item .pay_detail {margin-top:20px; text-align: center; line-height: 30px; color:#000; padding:10px 10px 10px 0;}
+.hk_pay_item .pay_detail .fs16 {font-size: 16px;}
+.hk_pay_item .pay_detail .pay_button {margin:10px 0;}
+
+.hk_client_info .content {line-height: 24px; padding:10px 0;}
+
+.hk_bottom_bar {overflow: hidden; padding:5px 0;}
+.hk_bottom_bar .left {display: block; width:40px; height: 40px; position: relative; padding:0 10px; margin-left:-10px;}
+.hk_bottom_bar .left .icon{background:url(../images/hk_icon.png) no-repeat scroll -15px -15px; background-size: 60px 45px; width:15px; height:15px; display:block; position: absolute; left:50%; margin-left:-7px; top:3px;}
+.hk_bottom_bar .left .ts {font-size: 12px; position: absolute; top:23px; left:50%; margin-left:-12px; color:#666;}
+.hk_bottom_bar .left .r_line {position:absolute; right:0; height:16px; top:50%; margin-top:-8px; width:0; border-right: 2px solid #cbcbcb;}
+.hk_bottom_bar .right {margin-right:10px;}
+.hk_bottom_bar .right .btn {background-color: #fb6841; color:#fff; margin:4px auto; height:32px; line-height: 32px;}
+.hk_bottom_bar .right .btn:hover {background-color: #f64415;}
+
+/* 家政订单详情页面 结束*/
+
+/* 订单页面弹出层 开始 */
+.popup_box{border-radius: 5px; display:block; overflow: hidden; height:447px; background-color: #fff;}
+.top_box {background-color: #44b5ff; padding:10px;  text-align:center;  position:relative; }
+.top_box .icon {position:absolute; top:10px; right:10px; width:20px; height:20px; background:url(../images/hk_icon.png) no-repeat scroll -60px -20px; background-size: 80px 60px;}
+.top_box .circle_bg {background:url(../images/circle_icon.png) no-repeat scroll 0 0; background-size: 160px 160px; width:160px; height:160px; border-radius: 50%; margin:40px auto; margin-top:45px; position:relative;}
+.top_box .circle_bg .text {position:absolute; top:50%; margin-top: -32px; left:50%; margin-left:-60px; line-height: 30px; width:120px; font-size: 14px; text-align: center; color:#000;}
+.top_box .circle_bg .text .p2{line-height: 35px;}
+.top_box .circle_bg .text .p2 span{font-size: 30px; font-weight: 500;}
+.top_box .text_info {margin-bottom:20px; color:#fff; font-size: 18px; line-height: 30px;}
+.down_box {background-color:#fff; text-align: center; padding:0 10px; }
+.down_box a.box1 {color:#eb563e; border:1px solid #eb563e; height:40px; line-height: 40px; padding:0 36px; border-radius: 5px; margin:30px auto;}
+.down_box a.box1:hover {background-color: #ffe;}
+
+.top_box2 {background-color: #fff; padding-top:10px;  position:relative;}
+.top_box2 .icon {position:absolute; top:10px; right:10px; width:20px; height:20px; background:url(../images/hk_icon.png) no-repeat scroll 0 -40px; background-size: 80px 60px;}
+.top_box2 .s_name {margin:30px; position:relative;}
+.top_box2 .s_name p{position: absolute; top:50%; left:50%; margin-left: -63px;  margin-top: -12px; padding:0 10px; font-size: 14px; line-height: 24px; background-color:#fff; color:#666; z-index: 2;}
+.top_box2 .s_name .line {width:100%; border-width: 0; border-top:1px solid #d9d9d9; transform: scaleY(.5);}
+.top_box2 .stars {padding:20px 0 44px 0;}
+.top_box2 .stars .star {display:block; width:80%; margin:0 auto;}
+.top_box2 .stars .star li{font-size: 40px; line-height: 60px; height:60px; width:20%; text-align: center;}
+.top_box2 .comments {padding:30px 10px 76px 10px; overflow: hidden; text-align: center;}
+.top_box2 .comments span{display:inline-block; margin:6px; padding:0 10px; border-radius: 14px; border:1px solid #bbb; line-height: 24px;  font-size: 14px;}
+.top_box2 .comments span.active {border-color: #eb563e; color: #eb563e; background-color: #fff5e9;}
+.down_box a.box2 {color:#fff; border-radius: 5px; margin:15px auto;}
+
+.top_box2 .comments_area  {margin:30px 20px 56px 20px; }
+.top_box2 .comments_area textarea {display: block; width:90%; margin:0 auto; height:74px; border:1px solid #d9d9d9; border-radius: 5px; padding:10px; overflow:hidden; resize:none;}
+
+
+.avatar_picture {background-color: #fff; }
+.avatar_picture .author {height:40px; background-color: #f0f2f5; position:relative; padding:5px 0;}
+.avatar_picture .author p{ text-align: center; line-height: 40px;}
+.avatar_picture .author i.close {position: absolute; top: 50%; margin-top: -10px; display:block; width:20px; height:20px; background: url(../images/hk_icon.png) no-repeat scroll 0 -40px; background-size: 80px 60px; }
+.avatar_picture .photo {overflow: hidden; padding:10px;}
+.avatar_picture .photo img {width:100%; height:auto;}
+/* 订单页面弹出层 结束 */
+
 /* 弹出层 开始 */
 
 /* 弹出层 》框架 开始 */
@@ -1567,15 +1774,15 @@ only screen and (min-device-pixel-ratio: 2) {
 @media screen and (max-width: 360px){
 	.nav_list {height:100px;}
 	.time_hours li{font-size: 12px; }
+
+	.popup_box{height:362px;}
+	.top_box .circle_bg {margin:10px auto;}
+	.top_box .text_info{margin-bottom:0;}
+	.down_box {padding:0 10px;}	
+	.top_box2 .comments span{margin:6px 4px; padding:0 8px; font-size: 12px;}
+	.top_box2 .stars {padding:0 0 24px 0;}
+	.top_box2 .comments {padding:10px 10px 51px 10px; }
+	.top_box2 .comments_area  {margin:10px 20px 31px 20px; }
+	.wrapper_5 {position:fixed; top:12%; }
+	.wrapper_6 {position:fixed; top:12%; }
 }
-
-
-
-
-
-
-
-
-
-
-

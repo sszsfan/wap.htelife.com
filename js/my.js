@@ -92,6 +92,7 @@ function addLoadEvent(func) {
 }
 
 function inputValue(){
+	if(!document.getElementById("inputval")) return false;
 	var val = document.getElementById("inputval");
 	var reg = /^\d+(\.\d)?$/; 
 	var reg2 = /^\d+$/;	

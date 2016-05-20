@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<title>订单管理</title>
+	<link href="styles/common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container bg_grey">
+		<div class="hk_order_state">
+			<div class="inner_box">
+				<div class="state_box">
+					<div class="icon_box">
+						<i></i>
+					</div>
+					<p class="state">已提交</p>
+				</div>
+				<div class="progress_box">
+					<ul class="progress_text">
+						<li class="active">
+							<p>已提交</p>
+							<div class="dot">
+								<i></i>
+							</div>
+						</li>
+						<li>
+							<p>已派单</p>
+							<div class="dot">
+								<i></i>
+							</div>
+						</li>
+						<li>
+							<p>已完成</p>
+							<div class="dot">
+								<i></i>
+							</div>
+						</li>
+					</ul>
+					<div class="progress_line">
+						<hr class="line" />
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="hk_working bottom_line">
+			<div class="state">
+				<p>工作中...（共三小时8分钟）</p>
+			</div>
+			<div class="progress">
+				<div class="item">
+					<p class="left color_green">工作开始</p>
+					<P class="right">工作结束</P>
+				</div>
+				<div class="progress_bar">
+					<div class="dot1">
+						<i></i>
+					</div>
+					<div class="outter_bar">
+						<div class="inner_bar"></div>
+					</div>
+					<div class="dot2 small">
+						<i></i>
+					</div>
+				</div>
+				<div class="item">
+					<p class="left color_black">05-16&nbsp;&nbsp;14:30:28</p>
+					<P class="right"><span class="fsize16">？&nbsp;</span>&nbsp;&nbsp;&nbsp;</P>
+				</div>
+			</div>
+		</div>
+		<div class="hk_server_info">
+			<div class="hk_item_head bottom_line">
+				<P>服务人员信息</P>
+			</div>
+			<div class="server_info">
+				<div class="info">
+					<p class="color_black">宁涛</p>
+					<p>电话&nbsp;&nbsp;<a href="tel:13765489562">13765489562</a></p>
+					<p>编号&nbsp;&nbsp;HK0000006</p>
+					<div class="comments">
+						<p>评分&nbsp;&nbsp;<span class="score">4.9</span>&nbsp;&nbsp;<span class="times">182次</span></p>
+						<ul class="star3">
+							<li>★</li>
+							<li>★</li>
+							<li>★</li>
+							<li>★</li>
+							<li>★</li>
+						</ul>
+					</div>
+					<img class="avatar jq_btn_005" src="img/avatar007.png" />
+				</div>
+			</div>
+		</div>
+		<div class="hk_order_info">
+			<div class="hk_item_head bottom_line">
+				<P>家庭保洁</P>
+			</div>
+			<div class="item bottom_line">
+				<p class="title">订单号</p>
+				<p class="content">W20160514000006</p>
+			</div>
+			<div class="item bottom_line">
+				<p class="title">支付状态</p>
+				<p class="content">未支付</p>
+			</div>
+			<div class="item bottom_line">
+				<p class="title">服务时间</p>
+				<p class="content color_green">2016-05-16&nbsp;&nbsp;14:30</p>
+			</div>
+			<div class="item bottom_line">
+				<p class="title">预约信息</p>
+				<p class="content">2小时</p>
+			</div>
+			<div class="item bottom_line">
+				<p class="title">实际信息</p>
+				<p class="content">计算中</p>
+			</div>
+			<div class="item bottom_line">
+				<p class="title">单价</p>
+				<p class="content">50元/小时</p>
+			</div>
+			<div class="item">
+				<p class="title">订单总额</p>
+				<p class="content color_red">计算中</p>
+			</div>
+		</div>
+	  	<div class="itembox_text border_line mt10">
+	    	<div class="item_a">
+		    	<span class="text border_line">使用优惠券</span>
+		    	<span class="text_value total">2</span>
+		    	<span class="icon icon_coupon"></span>
+		    	<span class="icon_pointer"></span>
+	    	</div>
+	    </div>
+		<div class="hk_pay_item">
+			<div class="hk_item_head bottom_line">
+				<P>付款项</P>
+			</div>
+			<div class="pay_detail">
+				<p>订单总金额￥<span>150.00</span>-￥<span>0.00</span>优惠券</p>
+				<p class="color_red fs16">应付：￥<span>150.00</span></p>
+				<div class="pay_button">
+					<button class="btn btn_blue btn_screen jq_btn_002" id="pay_button">付款</button>
+				</div>
+			</div>
+		</div>
+		<div class="hk_client_info">
+			<div class="hk_item_head bottom_line">
+				<P>客户信息</P>
+			</div>
+			<div class="content">
+				<p class="color_black">13135682311&nbsp;&nbsp;斑马</p>
+				<p>普通用户（100%）</p>
+				<p><span>长沙市</span>-<span>岳麓区</span>-<span>麓云路18号</span>-<span>固特邦创业基地508</span></p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 底部菜单 开始 -->
+	<div class="navbox border_line">
+		<div class="hk_bottom_bar">
+			<a href="javascript:void(0);" class="left">
+				<i class="icon"></i>
+				<span class="ts">投诉</span>
+				<i class="r_line"></i>
+			</a>
+			<div class="right">
+				<a href="#pay_button"><button class="btn">付款</button></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- //弹出层 开始 -->
+	<div class="jq_mask_002 mask_1"></div>
+	<div class="jq_wrapper_002 wrapper_1">
+		<div class="wrap_content">
+			<div class="pay_methods bb_line">
+				<p>支付方式</p>
+				<span class="close_wrap jq_close_002"></span>
+			</div>
+			<div class="methods_btn">
+				<a class="btn btn_green" href=""><p>微信支付</p></a>
+				<a class="btn btn_blue" href=""><p>支付宝付款</p></a>
+				<a class="btn btn_light_green" href="add_bankcard.html"><p>农行支付</p></a>
+				<a class="btn btn_white" href=""><p>余额支付</p></a>
+			</div>
+		</div>
+	</div> 
+	<!-- //弹出层 结束 -->
+	<!-- //弹出层 开始 -->
+	<div class="jq_mask_005 mask_1"></div>
+	<div class="jq_wrapper_005 wrapper_5">
+		<div class="avatar_picture">
+			<div class="author">
+				<p>头像</p>
+				<i class="close jq_close_005"></i>
+			</div>
+			<div class="photo">
+				<img src="img/avatar007.png" />
+			</div>
+		</div>
+	</div> 	
+	<!-- //弹出层 结束 -->
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- end javascript -->
+</body>

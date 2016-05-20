@@ -30,8 +30,8 @@ jQuery(document).ready(function($){
 	$('.abc_btn').on('click', function(){
 		$(".abc_btn").attr("src","images/abc_btn002.jpg");
 	});
-	//四个参数分别表示：打开按钮、背景层、弹出层、关闭按钮的Class名(.class)或者id名（#id）
-	function showWrapper(btn,mask,wrap,close){
+	//四个参数分别表示：打开按钮(.class)、背景层(.class)、弹出层(.class)、弹出层切换样式名(class)、关闭按钮的Class名(.class)或者id名（#id）
+	function showWrapper(btn,mask,wrap,wrapper,close){
 		var wraps = $(wrap);
 		var masks = $(mask);
 		var btn = $(btn);
@@ -40,27 +40,46 @@ jQuery(document).ready(function($){
 		function fun(e){
 			e.preventDefault();
 	   	    e.stopPropagation();
+	   	    /*return ;*/
 		}
 
 		btn.bind("click",function(){
-			
-			masks.addClass("mask_2");
-			wraps.addClass("wrapper_2");
+			if(!masks.hasClass("mask_2")){
+				masks.addClass("mask_2");
+			}
+			wraps.addClass(wrapper);
 			$(document).bind("touchmove",fun);
 		});
-		closes.bind("click",function(){
-			masks.removeClass("mask_2");
-			wraps.removeClass("wrapper_2");
-			$(document).unbind("touchmove",fun);
-		});
+
+		if(closes.length > 1){
+			closes.each(function(){
+				$(this).bind("click",function(){
+					masks.removeClass("mask_2");
+					wraps.removeClass(wrapper);
+					$(document).unbind("touchmove",fun);
+				});
+			});
+		}else{
+			closes.bind("click",function(){
+				masks.removeClass("mask_2");
+				wraps.removeClass(wrapper);
+				$(document).unbind("touchmove",fun);
+			});
+		}
+
 		masks.bind("click",function(){
 			masks.removeClass("mask_2");
-			wraps.removeClass("wrapper_2");
+			wraps.removeClass(wrapper);
 			$(document).unbind("touchmove",fun);
 		});
 	}
-	showWrapper(".jq_btn_001",".jq_mask_001",".jq_wrapper_001",".jq_close_001");
-	showWrapper(".jq_btn_002",".jq_mask_002",".jq_wrapper_002",".jq_close_002");
+	showWrapper(".jq_btn_001",".jq_mask_001",".jq_wrapper_001","wrapper_2",".jq_close_001");
+	showWrapper(".jq_btn_002",".jq_mask_002",".jq_wrapper_002","wrapper_2",".jq_close_002");
+	showWrapper(".jq_btn_003",".jq_mask_003",".jq_wrapper_003","wrapper_4",".jq_close_003");
+	showWrapper(".jq_dbbtn_001",".jq_mask_003",".jq_dbwrapper_001","wrapper_4",".jq_close_004");
+	showWrapper(".jq_dbbtn_002",".jq_mask_003",".jq_dbwrapper_002","wrapper_4",".jq_close_005");
+
+	showWrapper(".jq_btn_005",".jq_mask_005",".jq_wrapper_005","wrapper_6",".jq_close_005");
 
 	//评价选择星级
 	function starLight(thisObj,num){
@@ -89,6 +108,7 @@ jQuery(document).ready(function($){
 	}
 	starLight(".star1",4);
 	starLight(".star2",3);
+	starLight(".star3",3);
 
 	//菜单选菜
 	function cookMenu(){

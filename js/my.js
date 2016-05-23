@@ -104,7 +104,7 @@ function inputValue(){
 }
 addLoadEvent(showWrapper);
 addLoadEvent(showWrapper2);
-addLoadEvent(inputValue);
+//addLoadEvent(inputValue);
 
 
 

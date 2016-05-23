@@ -80,6 +80,7 @@ jQuery(document).ready(function($){
 	showWrapper(".jq_dbbtn_002",".jq_mask_003",".jq_dbwrapper_002","wrapper_4",".jq_close_005");
 
 	showWrapper(".jq_btn_005",".jq_mask_005",".jq_wrapper_005","wrapper_6",".jq_close_005");
+/*	showWrapper(".jq_btn_007",".jq_mask_007",".jq_wrapper_007","wrapper_8",".jq_close_007");*/
 
 	//评价选择星级thisObj为id或者class(注意不要用.star)
 	function starLight(thisObj,num){

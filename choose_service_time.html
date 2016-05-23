@@ -16,11 +16,20 @@
 <body class="bg_white">
 	<div class=" container">
 		<div class="top_choose">
-			<p class="bottom_line">家庭保洁（按时间）<input class="f_right" id="inputval" value="2" maxLength="5" ></p>
+			<div class="item">
+				<p class="bottom_line">预约服务人员数量<input class="f_right" type="number" value="1" maxLength="1" ></p>
+				<i class="icon1"></i>  
+				<i class="icon2"></i>
+			</div>
+			<div class="item">
+				<p class="bottom_line">家庭保洁（按时间）<input class="f_right" id="inputval" value="2" maxLength="5" ></p>
+				<i class="icon1"></i>  
+				<i class="icon2"></i>
+			</div>
 			<p class="bottom_line color_red">本行仅做提醒：新房开荒擦玻璃（按平方米） </p>
+			<p>单价<span class="f_right"><span class="color_red">50</span>元/人/小时</span></p>  
 			<p>费用<span class="f_right"><span class="color_red">100.0</span>元</span></p>  
-			<i class="icon1"></i>  
-			<i class="icon2"></i>  
+			  
 		</div>
 
 		<div>
@@ -89,6 +98,22 @@
 		</div>
 	</div>	
 
-	<script type="text/javascript" src="js/my.js"></script>
+	<!-- //弹出层 开始 -->
+<!-- 	<div class="jq_mask_007 mask_1"></div>
+	<div class="jq_wrapper_007 wrapper_7">
+		<div class="prompt_box">
+			<h4>温馨提示</h4>
+			<p>每位服务人员的服务时长为2小时，3位服务人员总服务时长为6小时。</p>
+			<div class="choice_btn">
+				<a href="order_submit.html" class="">确定</a>
+				<a href="javascript:void(0);" class="jq_close_007">取消</a>				
+			</div>
+		</div>
+	</div> 	 -->
+	<!-- //弹出层 结束 -->
+	<!-- start javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- end javascript -->	
 </body>
 </html>

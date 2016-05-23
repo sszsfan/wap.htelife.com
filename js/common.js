@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
 
 	showWrapper(".jq_btn_005",".jq_mask_005",".jq_wrapper_005","wrapper_6",".jq_close_005");
 
-	//评价选择星级
+	//评价选择星级thisObj为id或者class(注意不要用.star)
 	function starLight(thisObj,num){
 		if(!$(thisObj).hasClass("star")){
 			$(thisObj).addClass("star");

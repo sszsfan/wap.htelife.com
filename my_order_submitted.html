@@ -18,12 +18,15 @@
 			<div class="inner_box">
 				<div class="state_box">
 					<div class="icon_box">
+						<!-- 标签<i>增加.icon2表示已派单 .icon3表示已完成-->
 						<i></i>
 					</div>
+					<!-- 标签<p>f分别切换内容 已派单 已完成-->
 					<p class="state">已提交</p>
 				</div>
 				<div class="progress_box">
 					<ul class="progress_text">
+						<!-- 给li增加删除.active 对应的图标切换 -->
 						<li class="active">
 							<p>已提交</p>
 							<div class="dot">
@@ -50,9 +53,11 @@
 			</div>
 		</div>
 		<div class="hk_working bottom_line">
+			<!-- 此divz在已派单后出现，已完成内容变成 共3小时8分钟 （时间时间长度） -->
 			<div class="state">
-				<p>工作中...（共三小时8分钟）</p>
+				<p>工作中...（共3小时8分钟）</p>
 			</div>
+			<!-- 工作完成给此div加.over，另color_green，color_black分别移到对应的.right上  -->
 			<div class="progress">
 				<div class="item">
 					<p class="left color_green">工作开始</p>
@@ -65,7 +70,7 @@
 					<div class="outter_bar">
 						<div class="inner_bar"></div>
 					</div>
-					<div class="dot2 small">
+					<div class="dot2">
 						<i></i>
 					</div>
 				</div>
@@ -164,6 +169,7 @@
 	</div>
 	
 	<!-- 底部菜单 开始 -->
+	<!-- 此div在订单完成后出现 -->
 	<div class="navbox border_line">
 		<div class="hk_bottom_bar">
 			<a href="javascript:void(0);" class="left">

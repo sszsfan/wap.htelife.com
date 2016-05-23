@@ -207,13 +207,17 @@ body.bg_blue .poweredby a {color: rgba(255,255,255,0.3);}
 .close {position: absolute;top:5px;right:10px;height: 40px;height: 40px;}
 .close a {height: 40px;width: 40px;background-size: 92px 400px;background-image: url('../images/icon_all.png');background-position: 0px -121px;background-repeat: no-repeat;text-indent: -99999px;overflow: hidden;display: block;}
 .close a:hover {background-position: -40px -121px;}
-/* 通用关闭 结束 */s
+/* 通用关闭 结束 */
 
 /* 通用表格 开始 */
+
+
 .table {width: 100%;margin: 0;padding: 0;}
 .table th {font-weight: normal;text-align: left;vertical-align: middle;font-size: 14px;padding: 5px 5px 5px 0;word-break:break-all; word-wrap:break-word;border-bottom: 1px solid #e8ebf1;}
 .table td {font-size: 14px;;color:#333;word-break:break-all; word-wrap:break-word;padding: 10px 5px 10px 0;}
 .table_box {padding:10px 0;margin: 0 0 10px 0;}
+
+
 .table_screen {width: 100%;margin: 0;padding:0;}
 .table_screen th {font-weight: normal;text-align: left;vertical-align: middle;font-size: 14px;border-bottom: 1px solid #e8ebf1;padding: 5px 20px 5px 20px;word-break:break-all; word-wrap:break-word;}
 .table_screen td {font-size: 14px;;color:#333;word-break:break-all; word-wrap:break-word;padding: 10px 20px 10px 20px;}
@@ -1539,7 +1543,7 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 	position: absolute;
 	z-index: 2;
 	left:50%;
-	margin-left:-12px;
+	margin-left:-9px;
 	top: 31px;
 	width:11px;
 	height:11px;
@@ -1580,20 +1584,22 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 
 .hk_working {background-color: #fff;}
 .hk_working .state {background-color: #3dc700; height:45px; line-height: 45px; text-align: center; color: #fff; font-size: 16px;}
-.hk_working .progress {width:72%; margin:5px auto; font-size: 12px;}
+.hk_working .progress {width:72%; margin:0 auto; padding: 10px 0; font-size: 14px;}
 .hk_working .progress .item {overflow:hidden; line-height: 30px; color:#a6a6a6;}
 .hk_working .progress .progress_bar {position:relative;}
 .hk_working .progress .progress_bar .dot1 {position:absolute; top:50%; margin-top: -6px; left: 16px; width:9px; height: 9px; border:1px solid #3dc700; border-radius: 50%;}
 .hk_working .progress .progress_bar .dot1 i {display:block; width:5px; height:5px; background-color: #3dc700; border: 2px solid #fff; border-radius: 50%;}
-.hk_working .progress .progress_bar .dot1.small {border-color: #fff;}
-.hk_working .progress .progress_bar .dot1.small i {background-color: #bbb;}
-.hk_working .progress .progress_bar .dot2 {position:absolute; top:50%; margin-top: -6px; right: 16px; width:9px; height: 9px; border:1px solid #3dc700; border-radius: 50%;}
-.hk_working .progress .progress_bar .dot2 i {display:block; width:5px; height:5px; background-color: #3dc700; border: 2px solid #fff; border-radius: 50%;}
-.hk_working .progress .progress_bar .dot2.small {border-color: #fff;}
-.hk_working .progress .progress_bar .dot2.small i {background-color: #bbb;}
-.hk_working .progress .progress_bar .outter_bar {margin: 5px 40px; height:3px; background-color: #ddd; border-radius: 2px; }
-.hk_working .progress .progress_bar .outter_bar.full {background-color: #3dc700;}
+.hk_working .progress .progress_bar .dot2 {position:absolute; top:50%; margin-top: -6px; right: 16px; width:9px; height: 9px; border:1px solid #fff; border-radius: 50%; }
+.hk_working .progress .progress_bar .dot2 i {display:block; width:5px; height:5px; background-color: #bbb; border: 2px solid #fff; border-radius: 50%;}
+.hk_working .progress .progress_bar .outter_bar {margin: 3px 40px; height:3px; background-color: #ddd; border-radius: 2px; }
 .hk_working .progress .progress_bar .outter_bar .inner_bar {height:3px; background-color: #3dc700; width: 50%; border-radius: 2px;}
+
+.hk_working .progress.over .progress_bar .dot1 {border-color: #fff;}
+.hk_working .progress.over .progress_bar .dot1 i {background-color: #bbb;}
+.hk_working .progress.over .progress_bar .dot2 {border-color: #3dc700;}
+.hk_working .progress.over .progress_bar .dot2 i {background-color: #3dc700;}
+.hk_working .progress.over .progress_bar .outter_bar {background-color: #3dc700;}
+
 
 .hk_item_head {height:40px; line-height: 40px; font-size: 16px; font-weight: 500; color:#000;}
 .hk_server_info, .hk_client_info, .hk_pay_item, .hk_order_info {background-color: #fff; padding-left:10px; margin-top:10px; }

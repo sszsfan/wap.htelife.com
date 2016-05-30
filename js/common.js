@@ -83,7 +83,7 @@ jQuery(document).ready(function($){
 /*	showWrapper(".jq_btn_007",".jq_mask_007",".jq_wrapper_007","wrapper_8",".jq_close_007");*/
 
 	//评价选择星级thisObj为id或者class(注意不要用.star)
-	function starLight(thisObj,num){
+	/*function starLight(thisObj,num){
 		if(!$(thisObj).hasClass("star")){
 			$(thisObj).addClass("star");
 		}
@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
 	}
 	starLight(".star1",4);
 	starLight(".star2",3);
-	starLight(".star3",3);
+	starLight(".star3",3);*/
 
 	//菜单选菜
 	function cookMenu(){
@@ -124,4 +124,30 @@ jQuery(document).ready(function($){
 		});
 	}
 	cookMenu();
+
+	if($('.star_small').length){
+		$('.star_small').raty({
+
+			starOff: 'images/off.png',
+
+			starOn : 'images/on.png',
+
+			width: false,
+
+			space:false
+		});	
+	}
+	if($('.star_big').length){
+		$('.star_big').raty({
+
+			starOff: 'images/off.png',
+
+			starOn : 'images/on.png',
+
+			width: false,
+
+			space:false
+		});
+	}
+
 });

@@ -12,6 +12,17 @@
 	<title>华天e生活</title>
 	<link href="styles/common.css" rel="stylesheet" type="text/css">
 
+<!-- 	<style type="text/css">
+		.star_small {
+			width:100%;
+
+		}
+		.star_small img {
+			width:14px;
+			height:14px;
+			margin:0 1px;
+		}
+	</style> -->
 
 </head>
 <body class="bg_white">
@@ -20,13 +31,17 @@
 			<p>131****2311</p>
 			<p class="comment">非常好，师傅动作很快，味道又美，重点推荐油爆虾和娃娃汤。</p>
 			<span>04-12</span>
-			<ul class="star" id="star">
+			<div class="star_position">
+				<div class="star_small"></div>
+			</div>
+<!-- 			<ul class="star" id="star">
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
-			</ul>
+			</ul> -->
+
 		</div>
 	</div>
 	<div class="cook_comments">
@@ -34,13 +49,16 @@
 			<p>131****2311</p>
 			<p class="comment">非常好，师傅动作很快，味道又美。</p>
 			<span>04-12</span>
-			<ul class="star" id="star">
+			<div class="star_position">
+				<div class="star_small"></div>
+			</div>
+			<!-- <ul class="star" id="star">
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
 	<div class="cook_comments">
@@ -53,13 +71,16 @@
 				<img src="img/comment003.jpg" />
 			</div>
 			<span>04-12</span>
-			<ul class="star" id="star">
+			<div class="star_position">
+				<div class="star_small"></div>
+			</div>
+			<!-- <ul class="star" id="star">
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
 	<div class="cook_comments">
@@ -67,15 +88,35 @@
 			<p>131****2311</p>
 			<p class="comment">非常好，师傅动作很快，味道又美。</p>
 			<span>04-12</span>
-			<ul class="star" id="star">
+			<div class="star_position">
+				<div class="star_small"></div>
+			</div>
+			<!-- <ul class="star" id="star">
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
 				<li>★</li>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
-	
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery.raty.min.js"></script>
+<!-- 	<script type="text/javascript">
+
+	$('.star_small').raty({
+
+		starOff: 'images/off.png',
+
+		starOn : 'images/on.png',
+
+		width: 300,
+
+		space:false
+	});
+
+	</script> -->
 </body>
 </html>

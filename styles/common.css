@@ -55,6 +55,7 @@ a:active {text-decoration:none;color:#41a8de;}
 .color_grey {color: #ccc;}
 .color_black {color: #000;}
 .color_orange {color: #fb6841;}
+.btn_forbidden {background-color: #ccc;}
 .p10{padding:10px;}
 .bold {font-weight: bold;}
 .fsize20 {font-size: 20px;}
@@ -808,6 +809,11 @@ button.bd_white{border:1px solid #d9d9d9; background-color: #fff;}
 .wrap_content .methods a.color_blue p{color:#68b6ff; border-color: #68b6ff;}
 .wrap_content .methods a:hover p{background-color: #f8f8f8;}
 .methods_btn a{display:block; margin:10px;}
+
+/*.wrap_box {font-size: 16px;}
+.wrap_box .mc_head {line-height: 40px; padding: 10px 0; text-align: center;}
+.wrap_box .mc_body {line-height: 40px; padding:40px 0 37px 0;}
+.wrap_box .mc_foot {padding:10px; padding-bottom:5px;}*/
 /* 立即购买purchase_now结束 */
 
 /* 家政页面 开始 */
@@ -1380,6 +1386,9 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .comment_item .comment{font-size: 12px; color:#6b6b6b;}
 .comment_item .pic {overflow: hidden;}
 .comment_item .pic img{width:60px; height:60px; margin:2px; float: left;}
+
+
+
 /*立即预订页面*/
 .cook_order_now {text-align: center; line-height: 20px;}
 .cook_order_now h4{font-weight: normal; color:#000;}
@@ -1588,7 +1597,7 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 
 .hk_working {background-color: #fff;}
 .hk_working .state {background-color: #3dc700; height:45px; line-height: 45px; text-align: center; color: #fff; font-size: 16px;}
-.hk_working .progress {width:72%; margin:0 auto; padding: 10px 0; font-size: 14px;}
+.hk_working .progress {width:90%; margin:0 auto; padding: 10px 0; font-size: 14px;}
 .hk_working .progress .item {overflow:hidden; line-height: 30px; color:#a6a6a6;}
 .hk_working .progress .progress_bar {position:relative;}
 .hk_working .progress .progress_bar .dot1 {position:absolute; top:50%; margin-top: -6px; left: 16px; width:9px; height: 9px; border:1px solid #3dc700; border-radius: 50%;}
@@ -1607,13 +1616,15 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 
 .hk_item_head {height:40px; line-height: 40px; font-size: 16px; font-weight: 500; color:#000;}
 .hk_server_info, .hk_client_info, .hk_pay_item, .hk_order_info {background-color: #fff; padding-left:10px; margin-top:10px; }
-.hk_server_info .server_info .info {line-height:26px; position: relative; padding:5px 0 10px 0;}
+.hk_server_info .server_info .info {line-height:25px; position: relative; padding:5px 0 10px 0;}
 .hk_server_info .server_info .info .name{font-size: 15px; color:#000;}
 .hk_server_info .server_info .comments {position: relative; }
 .hk_server_info .server_info .comments .star {position: absolute; left:40px; top:50%; margin-top:-10px; height:20px; }
-.hk_server_info .server_info .comments .score {margin-left:80px; height:30px; padding:0 5px; background-color: #fb6841; border-radius: 3px; color:#fff; font-size: 12px;}
-.hk_server_info .server_info .comments .times {font-size: 12px;}
+.hk_server_info .server_info .comments .score {margin-left:85px; height:20px; line-height: 20px; display: inline-block; padding:0 5px; background-color: #fb6841; border-radius: 3px; color:#fff; font-size: 12px;}
+.hk_server_info .server_info .comments .times {font-size: 12px;  display:inline-block;}
 .hk_server_info .server_info .avatar {position:absolute; right:10px; top:50%; margin-top:-40px; width:80px; height:80px;}
+
+
 
 .hk_order_info .item {overflow: hidden; color:#000; line-height: 40px;}
 .hk_order_info .item .title {float:left; color:#666;}
@@ -1635,7 +1646,40 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 .hk_bottom_bar .right .btn {background-color: #fb6841; color:#fff; margin:4px auto; height:32px; line-height: 32px;}
 .hk_bottom_bar .right .btn:hover {background-color: #f64415;}
 
+
+/* star */
+.star_small img {
+	width:14px;
+	height:14px;
+	margin:0 1px;
+}
+.star_big {
+	width:300px;
+}
+.star_big img {
+	width:50px;
+	height:50px;
+	margin:0 5px;
+}
+
+.hk_server_info .server_info .comments .star_position{position: absolute; left:35px; top:50%; margin-top:-8px;}
+.comment_item .star_position{position: absolute; left:100px; top:13px;}
+.top_box2 .star_position {padding:20px 0 44px 0;}
+.top_box2 .star_position .star_big{margin:0 auto;}
+.cooker_comment .star_position {position:absolute; left:80px; top:50%; margin-top: -7px;}
+.cooker_list .cooker_info .star_position {position:absolute; left:0; top:50%; margin-top:-7px;}
+
 /* 家政订单详情页面 结束*/
+
+
+/* 我的建议页面 开始 */
+.my_suggestion{background-color: #fff;}
+.my_suggestion .head{line-height: 40px; text-align: center; font-size: 16px; color:#000;}
+.my_suggestion .body{ margin:10px; text-align: center;}
+.my_suggestion .body .textarea{width:100%; display: block; height:100px; border:1px solid #d9d9d9; border-radius: 3px; resize:none; background-color: #fbfbfb; font-size: 14px;}
+.my_suggestion .foot {padding:10px;}
+/* 我的建议页面 结束 */
+
 
 /* 温馨提示弹出层 开始 */
 /*.prompt_box {background-color: #fff; padding:10px;}
@@ -1689,7 +1733,7 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 /* 弹出层 》框架 开始 */
 body.modal_open {position: fixed;right:0;left:0;top:0;bottom:0;z-index:105000;overflow:hidden !important;outline:0;}
 
-.modal{position:absolute;right:0;left:0;top:0px;bottom:0px;height: 100%;width: 100%;z-index:105000;overflow:hidden;outline:0; 
+.modal{position:fixed;right:0;left:0;top:0px;bottom:0px;height: 100%;width: 100%;z-index:105000;overflow:hidden;outline:0; 
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
@@ -1698,7 +1742,7 @@ body.modal_open {position: fixed;right:0;left:0;top:0;bottom:0;z-index:105000;ov
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
 }
 .modal .modal_cover{position:absolute;top:0;right:0;bottom:0;left:0;z-index:104900;overflow:hidden;outline:0;}
-.modal .modal_dialog_tips{position:absolute;margin:0 auto;bottom:0px;left:0px;right:0px;z-index:190000;
+.modal .modal_dialog_tips{position:fixed;margin:0 auto;bottom:0px;left:0px;right:0px;z-index:190000;
   background-color: rgba(94, 110, 141, 0.7);
   opacity: 0;
   visibility: hidden;
@@ -1805,4 +1849,14 @@ only screen and (min-device-pixel-ratio: 2) {
 	.top_box2 .comments_area  {margin:10px 20px 31px 20px; }
 	.wrapper_5 {position:fixed; top:12%; }
 	.wrapper_6 {position:fixed; top:12%; }
+
+	.top_box2 .star_position {padding:0 0 24px 0;}
+	.star_big {
+		width:240px;
+	}
+	.star_big img {
+		width:40px;
+		height:40px;
+		margin:0 4px;
+	}
 }

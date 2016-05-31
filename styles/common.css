@@ -1489,6 +1489,8 @@ body.bg_img {background: url('../images/bg_login.png') #08a4ff;background-attach
 /* 农行支付 结束 */
 
 /* 家政订单详情页面 开始*/
+.float_icon {position:fixed; bottom:55px; right:5px; width:40px; height:40px; z-index:1000;}
+.float_icon img{width:100%;}
 .hk_order_state {
 	background-color: #3190e8;
 	overflow: hidden;

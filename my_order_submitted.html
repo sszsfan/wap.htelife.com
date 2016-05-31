@@ -12,7 +12,7 @@
 	<title>订单管理</title>
 	<link href="styles/common.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="js_modal_open">
 	<div class="container bg_grey">
 		<div class="hk_order_state">
 			<div class="inner_box">
@@ -214,7 +214,11 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- 浮动图标 -->
+	<div class="float_icon js_button_001">
+		<img src="images/float_icon.png" />
+	</div>
+
 	<!-- 底部菜单 开始 -->
 	<!-- 此div在订单完成后出现 -->
 	<div class="navbox border_line">
@@ -261,6 +265,25 @@
 		</div>
 	</div> 	
 	<!-- //弹出层 结束 -->
+
+	<!-- //弹出层 开始 -->
+	<div class="modal modal_share js_modal_001">
+	  <div class="modal_dialog_tips">
+	    <div class="modal_content">
+	    	<div class="btn_close js_drop_001"></div>
+	    	<div class="point"></div>
+	    	<div class="share_content">
+	    		<p>请点击右上角</p>
+	    		<p class="big">【发送给朋友】</p>
+	    		<p class="big">【分享到朋友圈】</p>
+	    		<p>分享给朋友</p>
+	    	</div>
+	    </div>
+	  </div>
+	  <div class="modal_cover"></div>
+	</div>
+	<!-- //弹出层 结束 -->
+
 <!-- 
 	<div class="wrap_content">
 		<div class="wrap_box">
